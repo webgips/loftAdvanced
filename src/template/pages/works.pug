@@ -1,0 +1,53 @@
+extends ../_template
+
+block variables
+    - var title = 'Мои работы'
+
+block content
+    section.portfolio
+        .portfolio__top
+            .portfolio__bg.container
+            h1.portfolio__title=title
+        .portfolio__slider
+            ul.slider__list
+                li.slider__item
+                    .slider__left
+                        .slider__info
+                            .slider__info-title
+                            .slider__info-tech
+                            a.slider__info-btn
+                    .slider__right
+                        .slider__img
+            .slider__arrows
+                a.slider__arrow-prev
+                a.slider__arrow-next
+    section.reviews
+        .reviews__top
+            .reviews__bg.container
+            h2.reviews__title Что обо мне говорят
+        .reviews__main
+            .reviews__item
+                .reviews__quotes
+                .reviews__text
+                .reviews__human
+                    .reviews__human-photo
+                    .reviews__human-discr
+                        .reviews__human-name
+                        .reviews__human-work
+            .reviews__item
+                .reviews__quotes
+                .reviews__text
+                .reviews__human
+                    .reviews__human-photo
+                    .reviews__human-discr
+                        .reviews__human-name
+                        .reviews__human-work
+        .contact
+            .contact__form
+                .form__title
+                input.form__name(type='text' name='name' placeholder='Имя' required)
+                input.form__email(type='email' name='email' placeholder='Email' required)
+                textarea(name='text' placeholder='Ваше сообщение' required)
+                input.form__submit(type='submit' name='submit' value='Отправить')
+                input.form__reset(type='reset' name='reset' value='Очистить')
+        a.reviews__link-arrow(href='#')
