@@ -2,6 +2,7 @@ extends ../_template
 
 block variables
     - var title = 'Мои работы'
+    - var name = 'Марков Максим'
 
 block content
     section.portfolio
@@ -15,7 +16,7 @@ block content
                         .slider__info
                             .slider__info-title
                             .slider__info-tech
-                            a.slider__info-btn
+                            a.slider__info-btn.btn
                     .slider__right
                         .slider__img
             .slider__arrows
@@ -31,7 +32,7 @@ block content
                 .reviews__text
                 .reviews__human
                     .reviews__human-photo
-                    .reviews__human-discr
+                    .reviews__human-descr
                         .reviews__human-name
                         .reviews__human-work
             .reviews__item
@@ -39,7 +40,7 @@ block content
                 .reviews__text
                 .reviews__human
                     .reviews__human-photo
-                    .reviews__human-discr
+                    .reviews__human-descr
                         .reviews__human-name
                         .reviews__human-work
         .contact

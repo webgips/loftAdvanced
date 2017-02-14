@@ -1,0 +1,40 @@
+block variables
+    - var title = 'Личный сайт веб разработчика'
+    - var name = 'Марков Максим'
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="Марков Максим" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+        //- favicon block start
+        //- favicon block end
+
+        link(rel='stylesheet' href='/assets/css/foundation.css')
+        link(rel='stylesheet' href='/assets/css/app.css')
+        script(src='/assets/js/foundation.js' defer)
+        script(src='/assets/js/app.min.js' defer)
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+
+    body
+        .wrapper
+            a.auth__btn.btn
+            .welcome
+                .welcome__photo-wrap
+                    .welcome__img
+                h1.welcome__name=name
+                h2.welcome__text=title
+                include ../common/_socials
+                .welcome__bottom
+                    a.welcome__link(href='works.html') Мои работы
+                    a.welcome__link(href='about.html') Обо мне
+                    a.welcome__link(href='blog.html') Блог
+            .copyright © #{name} | создано с любовью в LoftSchool | 2017

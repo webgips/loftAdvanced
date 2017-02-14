@@ -1,5 +1,10 @@
--var items=[{href:'works.html', name: 'Мои работы'},{href:'blog.html', name:'Блог'},{href:'about.html', name: 'Обо мне'},{href:'login.html', name: 'Авторизация'}]
+-
+    var items=[{href:'works.html', name: 'Мои работы'},
+                {href:'blog.html', name:'Блог'},
+                {href:'about.html', name: 'Обо мне'},
+                {href:'index.html', name: 'Авторизация'}]
+
 .menu__hamburger
     ul.menu__list
-       for item in items
+       each item in items
         li.menu__item: a.menu__link(href= item.href)  #{item.name}
