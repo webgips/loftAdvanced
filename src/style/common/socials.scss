@@ -1,5 +1,23 @@
 .social{
+  &__list{
+    list-style: none;
+  }
   &__item{
     display: inline-block;
+  }
+  &__link{
+    margin-right: 31px;
+
+    &:hover{
+     .social__svg{
+        opacity: 1;
+     }
+    }
+  }
+  &__svg{
+    fill:#fff;
+    opacity: .5;
+    max-width: 31px;
+    max-height: 22px;
   }
 }

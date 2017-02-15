@@ -1,12 +1,19 @@
 .header{
   position: relative;
+  background: url("../img/header-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
   &__top{
-    height: 100vh;
+    padding: 30px 30px 0;
     @include clearfix;
   }
   &__left,&__right{
     width: 50%;
     float: left;
+  }
+  &__right{
+    float: right;
+    text-align: right;
   }
   &__about-dev{
     position: absolute;
@@ -14,4 +21,49 @@
     right: 50%;
     transform: translate3d(-50%,-50%,0);
   }
+  &__portfolio-bg{
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate3d(-50%,-50%,0);
+    svg{
+      width: 1176px;
+      height: 313px;
+      opacity: .06;
+      fill:#fff;
+    }
+  }
+}
+.about-dev{
+  &__photo-wrap{
+    width:141px;
+    height: 141px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__name{
+    color: #fff;
+    font-family: 'Roboto-Medium';
+    font-size: 35px;
+  }
+  &__text{
+    color: #fff;
+    font-family:'Roboto-Light';
+    font-size:16px;
+    text-align: center;
+  }
+
+}
+
+.menu__list{
+  display: none;
+}
+.menu__hamburger{
+  display: inline-block;
+}
+.hamburger__svg{
+  fill: #fff;
+  max-width: 40px;
+  max-height: 35px;
 }

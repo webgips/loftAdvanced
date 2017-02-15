@@ -5,6 +5,8 @@
                 {href:'index.html', name: 'Авторизация'}]
 
 .menu__hamburger
+    a.hamburger__link(href="#")
+        +svg('hamburger__svg','hamburger')
     ul.menu__list
        each item in items
         li.menu__item: a.menu__link(href= item.href)  #{item.name}
