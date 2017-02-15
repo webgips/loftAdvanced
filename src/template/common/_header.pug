@@ -6,10 +6,14 @@ header.header
             include _menu.pug
     .header__about-dev
         .about-dev__photo-wrap
-            img.about-dev__photo-img(src='#' alt=name)
+            img.about-dev__photo-img(src='assets/img/photo.jpg' alt=name)
         .about-dev__name=name
         .about-dev__text Личный сайт веб разработчика
     .header__portfolio-bg
         +svg('portfolio__svg','portfolio_header')
     .header__triangle
         a.header__link-arrow(href='#')
+            +svg('link_arrow-down','portf_arrow_down')
+        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none" class="triangle-work")
+            polygon(class="left" points="0,0   0,86   500.8,86   500.8,84.5")
+            polygon(class="right" points="1000,0   1000,86   500,86   500,84.5")
