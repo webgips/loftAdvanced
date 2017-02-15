@@ -1,0 +1,17 @@
+.header{
+  position: relative;
+  &__top{
+    height: 100vh;
+    @include clearfix;
+  }
+  &__left,&__right{
+    width: 50%;
+    float: left;
+  }
+  &__about-dev{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate3d(-50%,-50%,0);
+  }
+}

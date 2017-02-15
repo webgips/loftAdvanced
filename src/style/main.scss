@@ -1,0 +1,23 @@
+//mixins
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+//colors
+
+//sections
+@import "common/header";
+@import "common/header";
+
+//fonts
+@import "common/fonts";
+//adaptive
+
+
+   
