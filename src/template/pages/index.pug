@@ -16,7 +16,7 @@ html
         //- favicon block end
 
         link(rel='stylesheet' href='/assets/css/foundation.css')
-        link(rel='stylesheet' href='/assets/css/app.css')
+        link(rel='stylesheet' href='/assets/css/main.css')
         script(src='/assets/js/foundation.js' defer)
         script(src='/assets/js/app.min.js' defer)
 
@@ -25,11 +25,11 @@ html
         <![endif]-->
 
     body
-        .wrapper
-            a.auth__btn.btn
+        .wrapper.welcome-bg
+            a.auth__btn.btn(href="#") Авторизоваться
             .welcome
                 .welcome__photo-wrap
-                    .welcome__img
+                    img.welcome__img(src='assets/img/photo.jpg')
                 h1.welcome__name=name
                 h2.welcome__text=title
                 include ../common/_socials
@@ -37,4 +37,4 @@ html
                     a.welcome__link(href='works.html') Мои работы
                     a.welcome__link(href='about.html') Обо мне
                     a.welcome__link(href='blog.html') Блог
-            .copyright © #{name} | создано с любовью в LoftSchool | 2017
+            .welcome__copyright.copyright © #{name} | создано с любовью в LoftSchool | 2017

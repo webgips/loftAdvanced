@@ -5,6 +5,12 @@ html,body{
   font-size: 16px;
   background: #ffffff;
 }
+.wrapper{
+  height:100%;
+  width:100%;
+  position: relative;
+}
+
 .hide{
   display: none;
 }
@@ -20,4 +26,18 @@ li {
 a{
   text-decoration: none;
   color: black;
+}
+.btn{
+  font-family:'Roboto-Medium';
+  font-size:16px;
+  color:#fff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 14px;
+}
+.copyright{
+  font-family:'Roboto-Light';
+  font-size:16px;
+  color: #fff;
+  opacity: .5;
 }
