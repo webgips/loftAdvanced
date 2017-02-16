@@ -1,0 +1,75 @@
+.about{
+  height: 100vh;
+  @include clearfix;
+  &__left, &__right{
+    width: 50%;
+    float: left;
+    height: 100%;
+  }
+  &__left{
+    background-color: #efeee9;
+  }
+  &__right{
+    background-color: #eeebdf;
+  }
+  &__title-bg{
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  &__title{
+    font-family: "BERNIERregular";
+    font-size:63px;
+    color: $road;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    @include dashes
+    &:before{
+      left: 23%;
+    }
+    &:after{
+     right: 23%;
+    }
+  }
+  .title-bg__svg{
+    fill: $road;
+    opacity: .07;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)translateY(-35%);
+  }
+  &__descr{
+    float: left;
+    width: 50%;
+  }
+  &__photo{
+    max-width: 450px;
+    height: 400px;
+    text-align: center;
+  }
+  &__photo-img{
+    height: 100%;
+  }
+  &__who{
+    font-family: "BERNIERregular";
+    font-size:35px;
+    color: #455a64;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+    @include dashes
+    &:before{
+      left: 32%;
+    }
+    &:after{
+      right: 32%;
+    }
+  }
+  &__text{
+    font-family: "Roboto-Regular";
+    font-size:16px;
+    color:#455a64;
+    margin-bottom: 20px;
+  }
+}

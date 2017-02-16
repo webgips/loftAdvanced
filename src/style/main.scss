@@ -9,14 +9,29 @@
     clear: both;
   }
 }
+@mixin dashes {
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background-color: $road;
+    width: 22px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    opacity:.2;
+    transform: translateY(-50%);
+  }
+}
 //colors
-
+$road:#373e42;
 //sections
 @import "common/all";
 @import "common/header";
 @import "common/header";
 @import "common/socials";
 @import "common/welcome";
+@import "common/about";
 
 //fonts
 @import "common/fonts";
