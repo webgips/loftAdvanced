@@ -1,3 +1,8 @@
+-var classTriangl=(title=='Мои работы' ? 'triangle-work' : 'triangle-about')
+
+script.
+    console.log(#{classTriangl})
+
 header.header
     .header__top
         .header__left
@@ -14,6 +19,10 @@ header.header
     .header__triangle
         a.header__link-arrow(href='#')
             +svg('link_arrow-down','portf_arrow_down')
-        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none" class="triangle-work")
+        svg(xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1000 85"
+            preserveAspectRatio="none"
+            class=classTriangl
+            )
             polygon(class="left" points="0,0   0,86   500.8,86   500.8,84.5")
             polygon(class="right" points="1000,0   1000,86   500,86   500,84.5")
