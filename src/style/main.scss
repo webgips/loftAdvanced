@@ -6,15 +6,15 @@ $dashes-margin: 5px;
 
 //mixins
 @import "common/mixins";
-//sections
+//common
 @import "common/all";
 @import "common/header";
-@import "common/header";
+@import "common/footer";
 @import "common/socials";
-@import "common/welcome";
-@import "common/about";
 @import "common/skill__circle";
-
+//pages
+@import "pages/welcome";
+@import "pages/about";
 //fonts
 @import "common/fonts";
 
