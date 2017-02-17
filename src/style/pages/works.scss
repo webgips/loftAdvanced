@@ -1,0 +1,23 @@
+.portfolio{
+  &__top{
+    height: 185px;
+    position: relative;
+    text-align: center;
+  }
+  &__title{
+    font-size:63px;
+    font-weight: normal;
+    color: $road;
+    position: relative;
+    @include dashes
+    @include dashtitle
+    &-bg{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      fill: #f0eee7;
+      opacity: .7;
+    }
+  }
+}

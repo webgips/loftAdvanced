@@ -49,3 +49,11 @@ a{
   font-weight: normal;
   margin: 0;
 }
+.base-title {
+  font-family: "BERNIERRegular";
+  font-size: 35px;
+  color: $road;
+  //margin: .85em 0;
+  position: relative;
+  text-align: center;
+}

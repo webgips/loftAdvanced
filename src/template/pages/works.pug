@@ -7,8 +7,8 @@ block variables
 block content
     section.portfolio
         .portfolio__top
-            .portfolio__bg.container
-            h1.portfolio__title=title
+            +svg('portfolio__title-bg','works_header')
+            h1.base-title.portfolio__title=title
         .portfolio__slider
             ul.slider__list
                 li.slider__item

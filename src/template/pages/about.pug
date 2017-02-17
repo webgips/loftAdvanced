@@ -9,7 +9,7 @@ block content
         .about__left
             .about__title-bg
                 +svg('title-bg__svg','about_header')
-                h1.about__title=title
+                h1.base-title.about__title=title
             .about__descr
                 .about__photo
                     img.about__photo-img(src="assets/img/photo.jpg")
@@ -22,8 +22,8 @@ block content
                     | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
                     | Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
         .about__right
-            .skills__title.skills__title-add Чем я могу быть
-            .skills__title Вам полезен
+            .base-title.skills__title.skills__title-add Чем я могу быть
+            .base-title.skills__title Вам полезен
             p.skills__desc Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
             .skills
             .skills__group
@@ -98,7 +98,7 @@ block content
     section.contacts
         .contacts__map
         .contacts__block
-            .contacts__title Контакты
+            .base-title.contacts__title Контакты
             ul.contacts__list
                 li.contacts__item
                     a.contacts__link.skype(href='skype:cmr.g1ps')

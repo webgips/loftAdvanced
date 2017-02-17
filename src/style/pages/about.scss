@@ -18,10 +18,7 @@
     margin-bottom: 40px;
   }
   &__title{
-    font-family: "BERNIERregular";
     font-size:63px;
-    color: $road;
-    position: relative;
     z-index: 2;
     @include dashes
     padding: 0 45px;
@@ -74,8 +71,6 @@
 //about__right
 .skills{
   &__title{
-    font-family: "BERNIERregular";
-    font-size: 35px;
     padding: 0 45px;
     color: $asphalt;
     position: relative;
@@ -124,6 +119,7 @@
     color: #00bfa5;
     font-family:"Roboto-Medium";
     font-size: 14px;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -150,10 +146,7 @@
     margin-top: -70px;
   }
   &__title{
-    font-family: "BERNIERregular";
-    font-size: 35px;
     margin-bottom: 40px;
-    position: relative;
     color: $asphalt;
     left:50%;
     transform: translateX(-50%);
@@ -174,7 +167,7 @@
     & svg{
       max-height: 25px;
       max-width: 25px;
-      margin-right: 20px;
+      margin-right: 15px;
       vertical-align: middle;
       fill: $road;
       opacity: .8;
