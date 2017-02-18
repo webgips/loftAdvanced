@@ -4,7 +4,7 @@
 
 ## Вторая неделя. Сверстано 4 страницы сайта портфолио.
 
-Страница приветсвия, кликните по [ссылке](http://webgips.tmweb.ru/){:target="_blank"}
+Страница приветсвия, кликните по <a href="http://webgips.tmweb.ru/" target="_blank">ссылке</a>
 
 Страница Обо мне, кликните по [ссылке](http://webgips.tmweb.ru/about.html)
 
