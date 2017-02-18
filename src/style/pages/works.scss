@@ -3,9 +3,11 @@
     height: 185px;
     position: relative;
     text-align: center;
+    background-color: #faf8f0;
   }
   &__title{
     font-size:63px;
+    margin: 55px 0;
     font-weight: normal;
     color: $road;
     position: relative;
@@ -13,11 +15,347 @@
     @include dashtitle
     &-bg{
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%,-50%);
       fill: #f0eee7;
-      opacity: .7;
+      width: 506px;
     }
+  }
+}
+//slider
+.portfolio__slider{
+  display: flex;
+  height: 100vh;
+  min-height: 650px;
+  background-color: #efeee9;
+}
+.slider{
+  &__left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  &__display{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 100%;
+    top: 0;
+    background-color: #efebe0;
+    &-img{
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__info{
+    max-width: 420px;
+    text-align: center;
+    &-item{
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+    &-title{
+      @include dashes
+      @include dashtitle
+      margin-bottom: 40px;
+
+      &:after{
+        top: 24%;
+        right:35px;
+      }
+      &:before{
+        top: 24%;
+        left:35px;
+      }
+    }
+    &-tech{
+      border-top: 1px solid rgba(0, 191, 165, 0.3);
+      border-bottom: 1px solid rgba(0, 191, 165, 0.3);
+      color: #00bfa5;
+      max-width: 420px;
+      margin: 0 auto 40px;
+      padding: 15px 0;
+      text-transform: uppercase;
+    }
+    &-btn{
+      background-color: #00bfa5;
+      color: #fff;
+      .info-btn__svg{
+        height:19px;
+        width: 19px;
+        fill: #fff;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+  // SLIDER__RIGHT
+  &__right{
+    flex: 1;
+    position: relative;
+  }
+  &__arrows{
+    display: flex;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__arrow{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    &-img{
+      max-height: 90%;
+      max-width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.arrow{
+  &-prev{
+    &:hover .arrow-prev__bg svg{
+      transform: translate(-50%, 15px);
+    }
+    &__bg{
+      background-color: rgba(182, 180, 174, 0.7);
+    }
+  }
+  &-next{
+    &:hover .arrow-next__bg svg{
+      transform: translate(-50%, -40px);
+    }
+    &__bg{
+      background-color: rgba(136, 131, 114, 0.5);
+    }
+  }
+  &-bg{
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__svg{
+      fill: #fff;
+      height: 27px;
+      z-index: 1;
+      width: 43px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .35s;
+    }
+  }
+}
+//REVIEWS
+.reviews{
+  position: relative;
+  background: url(../img/mountains_water.jpg) no-repeat;
+  background-size: cover;
+  box-sizing: content-box;
+  padding-bottom: 140px;
+  margin-bottom: -140px;
+  &__title{
+    position: relative;
+    text-align: center;
+    &-text{
+      font-size: 63px;
+      font-weight: normal;
+      max-width: 520px;
+      margin: 70px 0;
+      @include dashes
+      @include dashtitle
+      &:before{
+        top: 24%;
+        left: 70px;
+      }
+      &:after{
+        top: 24%;
+        right: 70px;
+      }
+    }
+    &-svg{
+      fill: #ebebec;
+      position: absolute;
+      width: 100%;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__main{
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0 20px;
+  }
+  &__list{
+    font-size: 0;
+    margin: 0 auto;
+    max-width: 780px;
+  }
+  &__item{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 3% 30px 0;
+    padding-top: 50px;
+    position: relative;
+    text-align: left;
+    width: 48.5%;
+    &:first-child{
+      margin-right: 0;
+    }
+  }
+  &__quotes{
+    opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    &-svg{
+      width: 36px;
+      height: 30px;
+      fill: $road;
+    }
+  }
+  &__text{
+    color: $asphalt;
+    margin-bottom: 20px;
+  }
+  &__person{
+    display: flex;
+    align-items: center;
+    &-photo{
+      border-radius: 50%;
+      height: 78px;
+      margin-right: 20px;
+      overflow: hidden;
+      width: 78px;
+      & .person-photo__img{
+        width: 100%;
+      }
+    }
+    &-name{
+      font-family:"Roboto-Bold";
+      color: #20b5a1;
+      margin-bottom: 5px;
+    }
+    &-work{
+      font-family:"Roboto-Regular";
+      color: #20b5a1;
+    }
+  }
+  &__link{
+    margin: 70px 0;
+    text-align: center;
+    &:hover .link-arrow__svg{
+      opacity:1;
+      transform: rotate(180deg) translateY(10px);
+    }
+    &-arrow svg{
+        fill: #fff;
+        opacity:.7;
+        width: 25px;
+        height: 16px;
+        transform: rotate(180deg);
+        transition: translateY .35s ease;
+    }
+  }
+}
+//CONTACT
+.contact{
+  .contact__form{
+    &-wrap{
+      border-radius: 5px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      width: 380px;
+    }
+  }
+}
+.form{
+  &__blur{
+    background: url(../img/mountains_water.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    width: 100%;
+    top: -70px;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+  }
+  &__main{
+    padding: 30px 20px;
+    position: relative;
+    background-color: rgba(#fff, .15);
+  }
+  &__title{
+    font-size:35px;
+    margin-bottom: 40px;
+    @include dashes
+    @include dashtitle
+  }
+  &__inp{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: $asphalt;
+    display: inline-block;
+    height: 45px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0 20px;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+  }
+  &__textarea{
+    height: 140px;
+    resize: none;
+    padding: 20px 20px;
+  }
+  &__buttons{
+    display: flex;
+  }
+  &__button{
+    font-family:"Roboto-Medium";
+    background-color: rgba(0, 191, 165, 0.85);
+    color: #fff;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 45px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover{
+      background-color: rgba(0, 191, 165, 0.3);
+    }
+  }
+  &__reset:before{
+    background-color: rgba(250, 248, 240, 0.4);
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 2px;
   }
 }

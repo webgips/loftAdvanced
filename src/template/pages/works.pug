@@ -10,45 +10,80 @@ block content
             +svg('portfolio__title-bg','works_header')
             h1.base-title.portfolio__title=title
         .portfolio__slider
-            ul.slider__list
-                li.slider__item
-                    .slider__left
-                        .slider__info
-                            .slider__info-title
-                            .slider__info-tech
-                            a.slider__info-btn.btn
-                    .slider__right
-                        .slider__img
-            .slider__arrows
-                a.slider__arrow-prev
-                a.slider__arrow-next
+            .slider__left
+                .slider__display
+                    img.slider__display-img(src="assets/img/works/work_img_1.png")
+                .slider__info
+                    .slider__info-item.active(data-img="assets/img/works/work_img_1.png")
+                        .base-title.slider__info-title Сайт школы онлайн образования
+                        .slider__info-tech html, css, javascript
+                        a.slider__info-btn.btn(href='#')
+                            +svg('info-btn__svg','link')
+                            | Посмотреть сайт
+                    .slider__info-item(data-img="assets/img/works/work_img_2.png")
+                        .base-title.slider__info-title
+                        .slider__info-tech
+                        a.slider__info-btn.btn(href='#')
+                    .slider__info-item(data-img="assets/img/works/work_img_3.png")
+                        .base-title.slider__info-title
+                        .slider__info-tech
+                        a.slider__info-btn.btn(href='#')
+                    .slider__info-item(data-img="assets/img/works/work_img_4.png")
+                        .base-title.slider__info-title
+                        .slider__info-tech
+                        a.slider__info-btn.btn(href='#')
+            .slider__right
+                .slider__arrows
+                    .slider__arrow.arrow-prev
+                        img.slider__arrow-img(src="assets/img/works/work_img_1.png")
+                        .arrow-bg.arrow-prev__bg
+                            +svg('arrow-bg__svg','portf_arrow_down')
+                    .slider__arrow.arrow-next
+                        img.slider__arrow-img(src="assets/img/works/work_img_1.png")
+                        .arrow-bg.arrow-next__bg
+                            +svg('arrow-bg__svg','portf_arrow_up')
     section.reviews
-        .reviews__top
-            .reviews__bg.container
-            h2.reviews__title Что обо мне говорят
+        .reviews__title
+            +svg('reviews__title-svg','about_header')
+            h2.base-title.reviews__title-text Что обо мне говорят
         .reviews__main
-            .reviews__item
-                .reviews__quotes
-                .reviews__text
-                .reviews__human
-                    .reviews__human-photo
-                    .reviews__human-descr
-                        .reviews__human-name
-                        .reviews__human-work
-            .reviews__item
-                .reviews__quotes
-                .reviews__text
-                .reviews__human
-                    .reviews__human-photo
-                    .reviews__human-descr
-                        .reviews__human-name
-                        .reviews__human-work
+            ul.reviews__list
+                li.reviews__item
+                    .reviews__quotes
+                        +svg('reviews__quotes-svg','quote-left')
+                    .reviews__text
+                        | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool!
+                        | 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .reviews__person
+                        .reviews__person-photo
+                            img.person-photo__img(src="assets/img/photo_kovalchuk.jpg")
+                        .reviews__person-descr
+                            .reviews__person-name Дмитрий Ковальчук
+                            .reviews__person-work основатель Loftschool
+                li.reviews__item
+                    .reviews__quotes
+                        +svg('reviews__quotes-svg','quote-right')
+                    .reviews__text
+                        | Этот код выдержит любые испытания.
+                        | Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .reviews__person
+                        .reviews__person-photo
+                            img.person-photo__img(src="assets/img/photo_sabancev.jpg")
+                        .reviews__person-descr
+                            .reviews__person-name Сабанцев Владимир
+                            .reviews__person-work преподаватель
         .contact
-            .contact__form
-                .form__title
-                input.form__name(type='text' name='name' placeholder='Имя' required)
-                input.form__email(type='email' name='email' placeholder='Email' required)
-                textarea(name='text' placeholder='Ваше сообщение' required)
-                input.form__submit(type='submit' name='submit' value='Отправить')
-                input.form__reset(type='reset' name='reset' value='Очистить')
-        a.reviews__link-arrow(href='#')
+            form.contact__form
+                .contact__form-wrap
+                    .form__blur
+                    .form__main
+                        .base-title.form__title Связаться со мной
+                        input.form__inp.form__name(type='text' name='name' placeholder='Имя' required)
+                        input.form__inp.form__email(type='email' name='email' placeholder='Email' required)
+                        textarea.form__inp.form__textarea(name='text' placeholder='Ваше сообщение' required)
+                    .form__buttons
+                        button.form__button.form__submit(type='submit' name='submit' value='') Отправить
+                        button.form__button.form__reset(type='reset' name='reset' value='') Очистить
+        .reviews__link
+            a.reviews__link-arrow(href='#')
+                +svg('link-arrow__svg','arrow_down')
