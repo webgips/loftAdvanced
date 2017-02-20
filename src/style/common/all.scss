@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  font-size: 16px;
+  background: #ffffff;
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: $asphalt
+}
+.wrapper{
+  min-height:100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hide{
+  display: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.btn{
+  font-family:'Roboto-Medium';
+  font-size:16px;
+  color:#fff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 14px;
+}
+.copyright{
+  font-family:'Roboto-Light';
+  font-size:16px;
+  color: #fff;
+  opacity: .5;
+}
+.about__title{
+  font-weight: normal;
+  margin: 0;
+}
+.base-title {
+  font-family: "BERNIERRegular";
+  font-size: 35px;
+  color: $road;
+  //margin: .85em 0;
+  position: relative;
+  text-align: center;
+}

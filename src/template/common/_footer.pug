@@ -1,22 +1,21 @@
 footer.footer
-    .footer__top
-        .footer__left
-            ul.footer__menu
-                li.footer__menu-link
-                li.footer__menu-link
-                li.footer__menu-link
-                li.footer__menu-link
-        .footer__right
+    .footer__section.footer__top
+        nav.footer__menu
+            ul.footer__menu-list
+                each item in items
+                    li.footer__menu-item: a.footer__menu-link(href= item.href)  #{item.name}
+        .footer__social
             ul.social__list
                 li.social__item
-                    a.social__link.vk
+                    a.social__link.vk(target='_blank' href='https://vk.com')
+                        +svg('social__svg','vk_round')
                 li.social__item
-                    a.social__link.git
+                    a.social__link.git(target='_blank' href='https://github.com')
+                        +svg('social__svg','github_round')
                 li.social__item
-                    a.social__link.in
-    .footer__bottom
-        .footer__left
-            p.footer__text Я веб разработчик из Минска, и этот сайт я сделал в рамках обучения
+                    a.social__link.in(target='_blank' href='https://linkedin.com')
+                        +svg('social__svg','in_round')
+    .footer__section.footer__bottom
+        .footer__about Я веб разработчик из Минска, и этот сайт я сделал в рамках обучения
             | в Школе онлайн образования Loftschool.
-        .footer__right
-            p.footer__copyright © #{name} | создано с любовью в LoftSchool | 2017
+        .footer__copyright.copyright © #{name} | создано с любовью в LoftSchool | 2017

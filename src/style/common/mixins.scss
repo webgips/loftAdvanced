@@ -1,0 +1,35 @@
+//mixins
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin dashes {
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background-color: $road;
+    width: 22px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    opacity:.2;
+    transform: translateY(-50%);
+  }
+}
+@mixin dashtitle {
+  display: inline-block;
+  padding: 0 45px;
+  &:before{
+    left: $dashes-margin;
+  }
+  &:after{
+    right: $dashes-margin;
+  }
+}

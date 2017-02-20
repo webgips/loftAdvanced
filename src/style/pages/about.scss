@@ -1,0 +1,178 @@
+.about{
+  display: flex;
+  flex-flow: row wrap;
+  &__left, &__right{
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 0 40px 40px;
+  }
+  &__left{
+    background-color: #efeee9;
+  }
+  &__right{
+    background-color: #eeebdf;
+  }
+  &__title-bg{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__title{
+    font-size:63px;
+    z-index: 2;
+    @include dashes
+    padding: 0 45px;
+    display: inline-block;
+    &:before{
+      left: $dashes-margin;
+    }
+    &:after{
+      right: $dashes-margin;
+    }
+  }
+  .title-bg__svg{
+    fill: $road;
+    opacity: .07;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+  }
+  &__descr{
+    max-width: 440px;
+    margin:0 auto;
+  }
+  &__photo{
+    max-width: 450px;
+    height: 400px;
+    text-align: center;
+  }
+  &__photo-img{
+    height: 100%;
+  }
+  &__who{
+    font-family: "BERNIERregular";
+    font-size:35px;
+    color: $asphalt;
+    @include dashtitle
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin: 40px 0;
+    @include dashes
+  }
+  &__text{
+    font-family: "Roboto-Regular";
+    font-size:16px;
+    color:#455a64;
+    margin-bottom: 20px;
+  }
+}
+//about__right
+.skills{
+  &__title{
+    padding: 0 45px;
+    color: $asphalt;
+    position: relative;
+    text-align: center;
+    &-add{
+      left: 50%;
+      transform: translateX(-50%);
+      @include dashes;
+      @include dashtitle;
+    }
+  }
+  &__desc{
+    margin-top: 30px;
+    font-family:"Roboto-Regular";
+    font-size:16px;
+    color: $asphalt;
+  }
+  &__group-title{
+    font-family:"Roboto-Medium";
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: $asphalt;
+  }
+  &__list{
+    margin-left: -30px;
+  }
+  &__item{
+    display: inline-block;
+    margin: 0 0 30px 30px;
+    vertical-align: top;
+  }
+}
+.skill{
+  height: 110px;
+  padding: 10px;
+  position: relative;
+  width: 110px;
+  & svg.skill__circle{
+    overflow: visible;
+  }
+  &__circle{
+    height: 100%;
+    width: 100%;
+  }
+  &__title{
+    color: #00bfa5;
+    font-family:"Roboto-Medium";
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+}
+.contacts{
+  height: 100vh;
+  position: relative;
+  background: url("../img/map.jpg");
+  background-size: cover;
+  box-sizing: content-box;
+  padding-bottom: 140px;
+  margin-bottom: -140px;
+  &__block{
+    padding: 40px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #e5f7f4;
+    opacity:.85;
+    border-radius: 5px;
+    margin-top: -70px;
+  }
+  &__title{
+    margin-bottom: 40px;
+    color: $asphalt;
+    left:50%;
+    transform: translateX(-50%);
+    @include dashes
+    @include dashtitle
+  }
+  &__item{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    font-family:"Roboto-Medium";
+    font-size:16px;
+    color: $road;
+    opacity:.8;
+    & svg{
+      max-height: 25px;
+      max-width: 25px;
+      margin-right: 15px;
+      vertical-align: middle;
+      fill: $road;
+      opacity: .8;
+    }
+  }
+}
+
+

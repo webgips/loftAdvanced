@@ -1,0 +1,26 @@
+
+//vars
+$road:#373e42;
+$asphalt: #455a64;
+$dashes-margin: 5px;
+
+//mixins
+@import "common/mixins";
+//common
+@import "common/all";
+@import "common/header";
+@import "common/footer";
+@import "common/socials";
+@import "common/skill__circle";
+//pages
+@import "pages/welcome";
+@import "pages/about";
+@import "pages/works";
+@import "pages/blog";
+//fonts
+@import "common/fonts";
+
+//adaptive
+
+
+   
