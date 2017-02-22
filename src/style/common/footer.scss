@@ -21,9 +21,12 @@
       margin-right: 40px;
     }
     &-link{
-      color: #fff;
+      color: #00bfa5;
       font-family:"Roboto-Medium";
       font-size:16px;
+      &:hover{
+        color: #fff;
+      }
     }
   }
   &__social{
@@ -49,7 +52,7 @@
       max-height: 36px;
       background-color: rgba(#fff,.5);
       fill: $road;
-      fill-opacity: .75;
+      fill-opacity: .85;
     }
   }
   &__about{
