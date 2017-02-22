@@ -27,14 +27,15 @@ html
     body
         .wrapper.welcome-bg
             a.auth__btn.btn(href="#") Авторизоваться
-            .welcome
-                .welcome__photo-wrap
-                    img.welcome__img(src='assets/img/photo.jpg')
-                h1.welcome__name=name
-                h2.welcome__text=title
-                include ../common/_socials
-                .welcome__bottom
-                    a.welcome__link(href='works.html') Мои работы
-                    a.welcome__link(href='about.html') Обо мне
-                    a.welcome__link(href='blog.html') Блог
+            .hero__welcome
+                .welcome
+                    .welcome__photo-wrap
+                        img.welcome__img(src='assets/img/photo.jpg')
+                    h1.welcome__name=name
+                    h2.welcome__text=title
+                    include ../common/_socials
+                    .welcome__bottom
+                        a.welcome__link(href='works.html') Мои работы
+                        a.welcome__link(href='about.html') Обо мне
+                        a.welcome__link(href='blog.html') Блог
             .welcome__copyright.copyright © #{name} | создано с любовью в LoftSchool | 2017

@@ -1,8 +1,17 @@
+.wrapper.welcome-bg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero__welcome{
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .welcome{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   min-width: 380px;
   min-height: 390px;
   background-color: #fcfcfc;
@@ -56,10 +65,7 @@
     }
   }
   &__copyright{
-    position: absolute;
-    left:50%;
-    bottom: 40px;
-    transform: translateX(-50%);
+    margin: 20px 0;
     opacity:1;
   }
 }
