@@ -8,6 +8,9 @@
   }
   &__left{
     background-color: #efeee9;
+    @include widescreen{
+      display: flex;
+    }
   }
   &__right{
     background-color: #eeebdf;
@@ -20,6 +23,10 @@
     position: relative;
     text-align: center;
     margin-bottom: 40px;
+    @include widescreen{
+      align-self: baseline;
+      flex: 1;
+    }
   }
   &__title{
     font-size:63px;
