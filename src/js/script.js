@@ -1,4 +1,4 @@
-    //GOOGLE MAPS
+//GOOGLE MAPS
     if($('#googlemap').length){
         function initMap() {
             var styles = [
@@ -64,7 +64,7 @@
                     "elementType": "labels",
                     "stylers": [
                         {
-                            "visibility": "off"
+                            "visibility": "on"
                         }
                     ]
                 },
@@ -103,7 +103,7 @@
                 new google.maps.Size(60, 70),
                 new google.maps.Point(0,0),
                 new google.maps.Point(15, 50),
-                new google.maps.Size(30, 50));
+                new google.maps.Size(30, 45));
             var myMarker = new google.maps.Marker({
                 position: {lat: 53.845173, lng: 27.533614},
                 map: map,
@@ -111,6 +111,7 @@
                 icon: image,
                 title: "I'm here"
             });
+            myMarker.setAnimation(google.maps.Animation.BOUNCE);
 
         }
     }

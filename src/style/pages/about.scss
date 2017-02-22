@@ -12,6 +12,9 @@
   &__right{
     background-color: #eeebdf;
     padding: 0 16px 40px 40px;
+    @include tablet{
+      text-align: center;
+    }
   }
   &__title-bg{
     position: relative;
@@ -81,6 +84,12 @@
       transform: translateX(-50%);
       @include dashes;
       @include dashtitle;
+      @include tablet{
+        left: 0;
+        transform: none;
+        margin-top: 20px;
+      }
+
     }
   }
   &__desc{
@@ -109,6 +118,16 @@
   padding: 10px;
   position: relative;
   width: 110px;
+  @include laptop{
+    height: 7.33333rem;
+    width: 7.33333rem;
+    padding: 0.6666666rem;
+  }
+  @include phones{
+    height: 7.85714rem;
+    width: 7.85714rem;
+    padding: 0.71428rem;
+  }
   & svg.skill__circle{
     overflow: visible;
   }
@@ -130,22 +149,23 @@
 .contacts{
   height: 100vh;
   position: relative;
-  //background: url("../img/map.jpg");
+  display: flex;
+  justify-content: center;
   background-size: cover;
   box-sizing: content-box;
   padding-bottom: 140px;
   margin-bottom: -140px;
   &__map{
-    width:100%;
-    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
   &__block{
     padding: 40px 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #e5f7f4;
+    align-self: center;
+    background-color: rgba(#fff, .85);
     opacity:.85;
     border-radius: 5px;
     margin-top: -70px;
