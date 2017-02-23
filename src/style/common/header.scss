@@ -33,6 +33,9 @@
       height: 313px;
       opacity: .06;
       fill:#fff;
+      @include tablet{
+        display: none;
+      }
     }
   }
   &__triangle{
@@ -40,17 +43,28 @@
     position: absolute;
     bottom: -4px;
     margin: 0 auto;
+    @include tablet{
+      bottom: -5px;
+    }
     .header__link-arrow{
       position: absolute;
       left: 50%;
       top: 23%;
       transform: translateX(-50%) translateY(-50%);
+      &:hover .link_arrow-down{
+        opacity: 1;
+        transform: translateY(15px);
+      }
+      @include phones{
+        top: -50%;
+      }
     }
     .link_arrow-down{
       width: 26px;
       height: 16px;
       opacity: 0.7;
       fill: #fff;
+      transition: transform .35s ease;
     }
     .triangle-work{
       fill: #faf8f0;
@@ -89,6 +103,7 @@
     font-family:'Roboto-Light';
     font-size:16px;
     text-align: center;
+    opacity: .8;
   }
 
 }

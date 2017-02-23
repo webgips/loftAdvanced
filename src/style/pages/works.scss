@@ -29,6 +29,12 @@
   height: 100vh;
   min-height: 650px;
   background-color: #efeee9;
+  @include tablet{
+    flex-direction: column;
+    display: block;
+    height: auto;
+    min-height: 0;
+  }
 }
 .slider{
   &__left{
@@ -47,17 +53,31 @@
     overflow: hidden;
     top: 0;
     background-color: #efebe0;
+    @include tablet{
+      position: static;
+      height: auto;
+      overflow: visible;
+    }
     &-img{
       width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include tablet{
+        position: static;
+        transform: none;
+      }
     }
   }
   &__info{
     max-width: 420px;
     text-align: center;
+    @include tablet{
+      max-width: 100%;
+      padding: 20px 0 40px 0;
+      width: 100%;
+    }
     &-item{
       display: none;
       &.active{
@@ -68,7 +88,6 @@
       @include dashes
       @include dashtitle
       margin-bottom: 40px;
-
       &:after{
         top: 24%;
         right:35px;
@@ -76,6 +95,25 @@
       &:before{
         top: 24%;
         left:35px;
+      }
+      @include tablet{
+        &:before{
+          top: 50%;
+          left:10px;
+        }
+        &:after{
+          top: 50%;
+          right:10px;
+        }
+      }
+      @include phones{
+        margin-bottom: 20px;
+        &:before{
+          left:70px;
+        }
+        &:after{
+          right:70px;
+        }
       }
     }
     &-tech{
@@ -86,6 +124,9 @@
       margin: 0 auto 40px;
       padding: 15px 0;
       text-transform: uppercase;
+      @include phones{
+        margin: 0 auto 20px;
+      }
     }
     &-btn{
       background-color: #00bfa5;
@@ -111,6 +152,13 @@
     bottom: 0;
     left: 0;
     right: 0;
+    @include tablet{
+      height: 210px;
+      position: static;
+    }
+    @include phones{
+      height: 94px;
+    }
   }
   &__arrow{
     flex: 1;
@@ -171,6 +219,10 @@
   box-sizing: content-box;
   padding-bottom: 140px;
   margin-bottom: -140px;
+  @include tablet{
+    padding-bottom: 220px;
+    margin-bottom: -220px;
+  }
   &__title{
     position: relative;
     text-align: center;
@@ -188,6 +240,11 @@
       &:after{
         top: 24%;
         right: 70px;
+      }
+      @include phones{
+        &:before,&:after{
+          top: 50%;
+        }
       }
     }
     &-svg{
@@ -220,6 +277,9 @@
     &:first-child{
       margin-right: 0;
     }
+    @include phones{
+      width: 100%;
+    }
   }
   &__quotes{
     opacity: .2;
@@ -230,6 +290,9 @@
       width: 36px;
       height: 30px;
       fill: $road;
+    }
+    @include phones{
+      left: 50%;
     }
   }
   &__text{
@@ -272,7 +335,7 @@
         width: 25px;
         height: 16px;
         transform: rotate(180deg);
-        transition: translateY .35s ease;
+        transition: transform .35s ease;
     }
   }
 }

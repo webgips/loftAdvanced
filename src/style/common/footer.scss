@@ -5,7 +5,7 @@
   flex-flow: column;
   padding: 0 30px;
   background-color: rgba($road,.85);
-  @include laptop{
+  @include tablet{
     height:auto;
   }
   &__section{
@@ -14,9 +14,9 @@
     flex: 1;
     justify-content: space-between;
     -webkit-box-pack: justify;
-    @include laptop{
+    @include tablet{
       display: block;
-      padding: 20px;
+      padding: 20px 0 20px;
       text-align: center;
     }
   }
@@ -25,14 +25,14 @@
   }
   &__menu{
     &-list{
-      @include laptop{
+      @include tablet{
         margin-bottom: 15px;
       }
     }
     &-item{
       display: inline-block;
       margin-right: 40px;
-      @include laptop{
+      @include tablet{
         margin-right: 20px;
       }
       @include phones{
@@ -84,7 +84,7 @@
     font-family: "Roboto-Light";
     color:#fff;
     opacity:.5;
-    @include laptop{
+    @include tablet{
       max-width: none;
     }
   }
