@@ -1,5 +1,11 @@
 .header__blog{
   height: 400px;
+  @include tablet{
+    height: 510px;
+  }
+  @include phones{
+    height: 560px;
+  }
   .header__hero{
     z-index: 2;
     text-align: center;
@@ -15,8 +21,8 @@
       @include dashes
       @include dashtitle
       display: block;
-      &:after,:before{
-        color: #fff;
+      &:after,&:before{
+        background-color: #fff;
       }
     }
     .hero__text{
@@ -38,6 +44,12 @@
   .header__triangle svg{
     fill: #fff;
   }
+  .header__link-arrow{
+    display: none;
+    @include tablet{
+      display: block;
+    }
+  }
 }
 .blog{
   flex: 1 0 auto;
@@ -51,6 +63,9 @@
     max-width: 28%;
     padding-top: 60px;
     width: 280px;
+    @include tablet{
+      display: none;
+    }
   }
   &-nav{
     position: relative;
@@ -78,21 +93,41 @@
     padding-top: 60px;
     margin: 0 115px;
     max-width: 980px;
+    @include tablet{
+      margin: 0 30px;
+    }
   }
   &__item{
     border-bottom: 5px solid rgba($road, 0.07);
     margin-bottom: 60px;
     padding-bottom: 60px;
+    &:last-child{
+      border-bottom: none;
+      @include tablet{
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    @include phones{
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+    }
   }
   &__title{
     font-family:"BERNIERregular";
     font-size:35px;
     color: $road;
     margin-bottom:30px;
+    @include tablet{
+      margin-bottom: 20px;
+    }
   }
   &__data{
     color: #00bfa5;
     margin-bottom:25px;
+    @include tablet{
+      margin-bottom: 20px;
+    }
   }
 
 }
