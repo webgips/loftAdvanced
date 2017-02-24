@@ -1,15 +1,18 @@
-.wrapper.welcome-bg{
+.wrapper.welcome-wrap{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  min-height: 100vh;
+  min-width: 320px;
 }
 .hero__welcome{
   flex: 1 1 auto;
   justify-content: center;
   align-items: center;
   display: flex;
+  padding: 70px 0;
 }
 .welcome{
   min-width: 380px;
@@ -19,10 +22,6 @@
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
-  &-bg{
-    background: url("../img/welcome-bg.jpg") no-repeat;
-    background-size: cover;
-  }
   &__photo-wrap{
     margin: 40px 0 20px 0;
     @extend .about-dev__photo-wrap
@@ -72,10 +71,38 @@
 .auth__btn{
   border: 1px solid #fff;
   position: absolute;
-  right: 6%;
+  right: 2%;
   top: 25px;;
   &:hover{
     background-color: #fff;
     color: #00bfa5;
   }
 }
+.paralax{
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(0);
+  &__layer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    bottom: -10%;
+    left: -10%;
+  }
+}
+@for $i from 0 through 9{
+  .paralax__layer-#{$i}{
+    background-image: url("../img/background/layer_#{$i}.png");
+  }
+
+}
+
