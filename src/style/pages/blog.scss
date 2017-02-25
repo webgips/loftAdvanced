@@ -2,6 +2,14 @@
   height: 400px;
   background: url("../img/header-bg.jpg") no-repeat 50% 0;
   background-size: cover;
+  @include widescreen{
+    & .header__top{
+      margin: 0 auto;
+      max-width: 1140px;
+      width: 100%;
+    }
+  }
+
   @include tablet{
     height: 510px;
   }

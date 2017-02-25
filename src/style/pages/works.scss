@@ -355,11 +355,6 @@
   &__blur{
     background: url(../img/mountains_water.jpg) no-repeat;
     background-size: cover;
-    background-position: 50% 0;
-    width: 100%;
-    top: -70px;
-    height: 100%;
-    -webkit-filter: blur(5px);
     filter: blur(5px);
     position: absolute;
   }

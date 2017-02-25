@@ -135,8 +135,7 @@ $(function() {
             var widthPosition = X * (index / 100 ),
                 heightPosition = Y * (index / 100 ),
                 bottomPosition = ((window.innerHeight / 2) * (index / 100));
-            // console.log(index);
-            // console.log(value);
+            
             $(value).css({
                 'bottom' : '-' + bottomPosition +'px',
                 'transform': 'translate3d(' + widthPosition + 'px, ' + heightPosition + 'px, 0)'
@@ -172,5 +171,30 @@ $(function() {
        var wScroll = window.pageYOffset;
 
        parallax.init(wScroll);
+    });
+});
+//blur
+$(function() {
+    var blurBg = (function(){
+        var blur = $('.form__blur'),
+            section = $('.reviews');
+
+        return{
+            set: function(){
+                var posTop = $('.contact').position().top,
+                    posLeft = $('.contact__form-wrap').offset().left;    
+                console.log(section.innerHeight())
+                blur.css({
+                'height' : section.innerHeight(),
+                'width' : section.width(),
+                'top' : -posTop,
+                'left' : -posLeft,
+                });    
+            }            
+        }    
+    }());
+    blurBg.set();
+    $(window).on('resize', function(){
+        blurBg.set();
     });
 });
