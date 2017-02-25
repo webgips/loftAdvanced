@@ -22,6 +22,12 @@ html{
   overflow: hidden;
   position: relative;
 }
+.full-screen{
+  height: 100vh;
+  .header{
+    overflow: visible;
+  }
+}
 
 .hide{
   display: none;

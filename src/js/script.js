@@ -198,6 +198,13 @@ $(function() {
         $(window).on('resize', function(){
             blurBg.set();
         });
-    }
-    
+    }    
+});
+//MENU
+$(function() {
+    $('.hamburger__link').on('click',function(){   
+        $(this).toggleClass('active');     
+        $(this).siblings('.menu').toggleClass('active');
+        $('.wrapper').toggleClass('full-screen');        
+    });
 });
