@@ -183,7 +183,7 @@ $(function() {
             set: function(){
                 var posTop = $('.contact').position().top,
                     posLeft = $('.contact__form-wrap').offset().left;    
-                console.log(section.innerHeight())
+
                 blur.css({
                 'height' : section.innerHeight(),
                 'width' : section.width(),
@@ -193,8 +193,11 @@ $(function() {
             }            
         }    
     }());
-    blurBg.set();
-    $(window).on('resize', function(){
-        blurBg.set();
-    });
+    if($('.reviews').length){
+            blurBg.set();
+        $(window).on('resize', function(){
+            blurBg.set();
+        });
+    }
+    
 });
