@@ -207,4 +207,9 @@ $(function() {
         $(this).siblings('.menu').toggleClass('active');
         $('.wrapper').toggleClass('full-screen');        
     });
+//BLOG MENU
+    $('.blog-nav__btn').on('click',function(){
+        $(this).parent('.blog-nav').toggleClass('open');
+        return false;
+    });
 });
