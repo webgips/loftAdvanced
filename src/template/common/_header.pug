@@ -6,11 +6,13 @@ header.header
             include _socials
         .header__right
             include _menu.pug
-    .header__about-dev
-        .about-dev__photo-wrap
-            img.about-dev__photo-img(src='assets/img/photo.jpg' alt=name)
-        .about-dev__name=name
-        .about-dev__text Личный сайт веб разработчика
+    .header__bg
+    .header__about-dev-wrap
+        .header__about-dev
+            .about-dev__photo-wrap
+                img.about-dev__photo-img(src='assets/img/photo.jpg' alt=name)
+            .about-dev__name=name
+            .about-dev__text Личный сайт веб разработчика
     .header__portfolio-bg
         +svg('portfolio__svg','portfolio_header')
     .header__triangle

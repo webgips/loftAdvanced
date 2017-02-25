@@ -1,11 +1,19 @@
 .header{
   position: relative;
-  background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
   height: 600px;
   &__top{
     padding: 30px 30px 0;
     @include clearfix;
+  }
+  &__bg{
+    background: url("../img/header-bg.jpg") no-repeat 50% 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   &__left,&__right{
     width: 50%;
@@ -22,6 +30,13 @@
     top: 43%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    &-wrap{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
   &__portfolio-bg{
     position: absolute;

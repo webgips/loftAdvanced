@@ -1,5 +1,7 @@
 .header__blog{
   height: 400px;
+  background: url("../img/header-bg.jpg") no-repeat 50% 0;
+  background-size: cover;
   @include tablet{
     height: 510px;
   }
