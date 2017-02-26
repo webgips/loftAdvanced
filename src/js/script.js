@@ -99,7 +99,7 @@
                 disableDefaultUI: true
             });
             // Create marker
-            var image = new google.maps.MarkerImage('assets/img/map_marker.svg',
+            var image = new google.maps.MarkerImage('assets/img/icons/map_marker.svg',
                 new google.maps.Size(60, 70),
                 new google.maps.Point(0,0),
                 new google.maps.Point(15, 50),
