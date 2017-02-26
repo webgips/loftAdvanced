@@ -82,7 +82,7 @@
     text-align: right;
     transition: all 0.1s ease;
     @include tablet{
-      background-color: #00bfa5;
+      background-color: $gray;
       box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
       display: flex;
       align-items: center;
@@ -106,7 +106,7 @@
         right: -18px;
         width: 18px;
         &:before{
-          background-color: #00bfa5;
+          background-color: $gray;
           border-radius: 50%;
           content: '';
           margin-top: -30px;
@@ -144,8 +144,8 @@
       }
       &-active,&:hover{
         font-family:"Roboto-Bold";
-        border-color: #00bfa5;
-        color: #00bfa5;
+        border-color: $gray;
+        color: $gray;
         @include tablet{
           color: #fff;
         }
@@ -186,7 +186,7 @@
     }
   }
   &__data{
-    color: #00bfa5;
+    color: $gray;
     margin-bottom:25px;
     @include tablet{
       margin-bottom: 20px;

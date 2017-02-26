@@ -67,7 +67,10 @@ a{
   font-family: "BERNIERRegular";
   font-size: 35px;
   color: $road;
-  //margin: .85em 0;
   position: relative;
   text-align: center;
+}
+
+.flip{
+  transform: rotateY(180deg);
 }
