@@ -144,22 +144,23 @@ $(function() {
     });
 });
 $(function() {
-    var parallax = (function(){
+    var parallax;
+    parallax = (function () {
         var bg = $('.header__bg'),
-            user = $('.header__about-dev-wrap'),            
+            user = $('.header__about-dev-wrap'),
             sectionText = $('.portfolio__svg');
 
         return {
-            move: function (block, windowScroll, strafeAmount){
+            move: function (block, windowScroll, strafeAmount) {
                 var strafe = windowScroll / -strafeAmount + '%';
 
-                block.css('transform', 'translate3d(0,'+strafe+',0)');
-                block.css('webkitTransform', 'translate3d(0,'+strafe+',0)');
+                block.css('transform', 'translate3d(0,' + strafe + ',0)');
+                block.css('webkitTransform', 'translate3d(0,' + strafe + ',0)');
             },
 
-            init: function (wScroll){
+            init: function (wScroll) {
                 this.move(bg, -wScroll, 30);
-                this.move(user, wScroll, 15);                
+                this.move(user, wScroll, 15);
                 this.move(sectionText, wScroll, 25);
             }
         }
@@ -188,7 +189,7 @@ $(function() {
                 'height' : section.innerHeight(),
                 'width' : section.width(),
                 'top' : -posTop,
-                'left' : -posLeft,
+                'left' : -posLeft
                 });    
             }            
         }    
@@ -212,4 +213,22 @@ $(function() {
         $(this).parent('.blog-nav').toggleClass('open');
         return false;
     });
+});
+//flip
+$(function() {
+
+   if($('.welcome-wrap').length){
+
+         $('.auth__btn').on('click',function(e) {
+            e.preventDefault();
+            $(this).css('display', 'none');
+            $('.hero__welcome').addClass('flip');
+        });    
+
+         $('.login-form__btn').on('click',function(e) {
+            e.preventDefault();
+             $('.auth__btn').css('display', 'inline-block');
+            $('.hero__welcome').removeClass('flip');
+         });     
+    }
 });

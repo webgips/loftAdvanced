@@ -13,6 +13,12 @@
   align-items: center;
   display: flex;
   padding: 70px 0;
+  transform-style: preserve-3d;
+  transition: all .4s ease-in-out;
+
+  & .flip{
+    transform: rotateY(180deg);
+  }
 }
 .welcome{
   min-width: 380px;
