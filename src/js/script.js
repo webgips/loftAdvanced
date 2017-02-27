@@ -203,13 +203,15 @@ $(function() {
 });
 //MENU
 $(function() {
-    $('.hamburger__link').on('click',function(){   
+    $('.hamburger__link').on('click',function(e){   
+        e.preventDefault();
         $(this).toggleClass('active');     
         $(this).siblings('.menu').toggleClass('active');
         $('.wrapper').toggleClass('full-screen');        
     });
 //BLOG MENU
-    $('.blog-nav__btn').on('click',function(){
+    $('.blog-nav__btn').on('click',function(e){
+        e.preventDefault();
         $(this).parent('.blog-nav').toggleClass('open');
         return false;
     });
