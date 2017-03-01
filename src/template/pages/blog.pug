@@ -29,11 +29,10 @@ html
         .wrapper
             header.header.header__blog
                 .header__top
-                    .header__container
-                        .header__left
-                            include ../common/_socials
-                        .header__right
-                            include ../common/_menu
+                    .header__left
+                       include ../common/_socials
+                    .header__right
+                       include ../common/_menu
                 .header__hero
                     .about-dev__photo-wrap
                         img.about-dev__photo-img(src='assets/img/photo.jpg' alt=name)
@@ -42,6 +41,8 @@ html
                     .header__blog-bg
                         +svg('header__blog-svg','blog_header')
                 .header__triangle
+                    a.header__link-arrow(href='#')
+                        +svg('link_arrow-down','portf_arrow_down')
                     svg(xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1000 85"
                         preserveAspectRatio="none"
@@ -53,6 +54,7 @@ html
                 .blog-wrap
                     .blog__left
                         .blog-nav
+                            a.blog-nav__btn(href="#")
                             ul.blog-nav__list
                                 li.blog-nav__item
                                     a.blog-nav__link.blog-nav__link-active(href="#") Самое важное в SASS

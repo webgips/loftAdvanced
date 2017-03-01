@@ -3,6 +3,7 @@ extends ../_template
 block variables
     - var title = 'Обо мне'
     - var name = 'Марков Максим'
+    - var mapscript = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCcse5IEhoaxPi4mD0fWBb5Yu24KC01v8E&callback=initMap'
 
 block content
     section.about
@@ -96,7 +97,7 @@ block content
                                 circle.circle__second.circle-75(r='45', cx='50%', cy='50%', transform='rotate(-90 45 45)')
                             .skill__title Bower
     section.contacts
-        .contacts__map
+        .contacts__map#googlemap
         .contacts__block
             .base-title.contacts__title Контакты
             ul.contacts__list

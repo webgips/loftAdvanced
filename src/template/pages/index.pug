@@ -25,16 +25,61 @@ html
         <![endif]-->
 
     body
-        .wrapper.welcome-bg
+        .paralax
+            .paralax__layer.paralax__layer-0
+            .paralax__layer.paralax__layer-1
+            .paralax__layer.paralax__layer-2
+            .paralax__layer.paralax__layer-3
+            .paralax__layer.paralax__layer-4
+            .paralax__layer.paralax__layer-5
+            .paralax__layer.paralax__layer-6
+            .paralax__layer.paralax__layer-7
+            .paralax__layer.paralax__layer-8
+            .paralax__layer.paralax__layer-9
+        .wrapper.welcome-wrap
             a.auth__btn.btn(href="#") Авторизоваться
-            .welcome
-                .welcome__photo-wrap
-                    img.welcome__img(src='assets/img/photo.jpg')
-                h1.welcome__name=name
-                h2.welcome__text=title
-                include ../common/_socials
-                .welcome__bottom
-                    a.welcome__link(href='works.html') Мои работы
-                    a.welcome__link(href='about.html') Обо мне
-                    a.welcome__link(href='blog.html') Блог
+            .hero__welcome
+                .welcome
+                    .welcome__photo-wrap
+                        img.welcome__img(src='assets/img/photo.jpg')
+                    h1.welcome__name=name
+                    h2.welcome__text=title
+                    include ../common/_socials
+                    .welcome__bottom
+                        a.welcome__link(href='works.html') Мои работы
+                        a.welcome__link(href='about.html') Обо мне
+                        a.welcome__link(href='blog.html') Блог
+                .welcome__login
+                    form.welcome__login-form.auth
+                        .login-form__wrap
+                            .login-form__title.base-title Авторизуйтесь
+                            .login-form__input-wrap
+                                .login-form__input-icon
+                                    +svg('input-icon__login','login')
+                                input.form__input.form__inp(name='login' type='text' placeholder='Логин')
+                            .login-form__input-wrap
+                                .login-form__input-icon
+                                    +svg('input-icon__password','password')
+                                input.form__input.form__inp(name='password' type='password' placeholder='Пароль')
+                            .login-form__captcha
+                                label.captcha
+                                    input.captcha__checkbox(type="checkbox" name="captcha" value="check")
+                                    span.captcha__fake-checkbox.captcha__input
+                                    span.captcha__text Я человек
+                            .login-form__add-captcha
+                                .add-captcha__title Вы точно не робот?
+                                .add-captcha__buttons
+                                    label.add-captcha__btn
+                                        input.add-captcha__radio(type='radio' name='add-captcha' value='yes')
+                                        span.add-captcha__fake-radio.captcha__input
+                                        span.add-captcha__text Да
+                                    label.add-captcha__btn
+                                        input.add-captcha__radio(type='radio' name='add-captcha' value='no')
+                                        span.add-captcha__fake-radio.captcha__input
+                                        span.add-captcha__text Не уверен
+                        .login-form__btns
+                            a.login-form__btn(href='#') На главную
+                            button.login-form__btn(type="submit") Войти
+
+
             .welcome__copyright.copyright © #{name} | создано с любовью в LoftSchool | 2017

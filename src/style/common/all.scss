@@ -1,18 +1,32 @@
 *{
   box-sizing: border-box;
 }
-
 html,body{
   height: 100%;
   font-size: 16px;
+  position: relative;
   background: #ffffff;
   font-family: "Roboto-Regular", Arial, sans-serif;
   color: $asphalt
+}
+html{
+  @include tablet{
+    font-size:15px;
+  }
+  @include phones{
+    font-size:14px;
+  }
 }
 .wrapper{
   min-height:100%;
   overflow: hidden;
   position: relative;
+}
+.full-screen{
+  height: 100vh;
+  .header{
+    overflow: visible;
+  }
 }
 
 .hide{
@@ -53,7 +67,10 @@ a{
   font-family: "BERNIERRegular";
   font-size: 35px;
   color: $road;
-  //margin: .85em 0;
   position: relative;
   text-align: center;
+}
+
+.flip{
+  transform: rotateY(180deg);
 }

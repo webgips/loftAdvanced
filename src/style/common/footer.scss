@@ -5,25 +5,47 @@
   flex-flow: column;
   padding: 0 30px;
   background-color: rgba($road,.85);
+  @include tablet{
+    height:auto;
+  }
   &__section{
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: space-between;
     -webkit-box-pack: justify;
+    @include tablet{
+      display: block;
+      padding: 20px 0 20px;
+      text-align: center;
+    }
   }
   &__top{
     border-bottom: 1px solid rgba(#fff,.1);
   }
   &__menu{
+    &-list{
+      @include tablet{
+        margin-bottom: 15px;
+      }
+    }
     &-item{
       display: inline-block;
       margin-right: 40px;
+      @include tablet{
+        margin-right: 20px;
+      }
+      @include phones{
+        margin-right: 5px;
+      }
     }
     &-link{
-      color: #fff;
+      color: $gray;
       font-family:"Roboto-Medium";
       font-size:16px;
+      &:hover{
+        color: #fff;
+      }
     }
   }
   &__social{
@@ -33,6 +55,10 @@
       height: 38px;
       width: 38px;
       overflow: hidden;
+      margin-left: 15px;
+      &:first-child{
+        margin-left: 0;
+      }
     }
     .social__item:hover{
       border: 1px solid transparent;
@@ -49,7 +75,8 @@
       max-height: 36px;
       background-color: rgba(#fff,.5);
       fill: $road;
-      fill-opacity: .75;
+      fill-opacity: .85;
+      border-radius: 50%;
     }
   }
   &__about{
@@ -57,5 +84,8 @@
     font-family: "Roboto-Light";
     color:#fff;
     opacity:.5;
+    @include tablet{
+      max-width: none;
+    }
   }
 }

@@ -1,19 +1,34 @@
+.wrapper.welcome-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 320px;
+}
+.hero__welcome{
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 70px 0;
+  transform-style: preserve-3d;
+  transition: all .4s ease-in-out;
+
+  & .flip{
+    transform: rotateY(180deg);
+  }
+}
 .welcome{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   min-width: 380px;
   min-height: 390px;
-  background-color: #fcfcfc;
-  opacity: .85;
+  background-color: rgba(#fcfcfc,.85);
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
-  &-bg{
-    background: url("../img/welcome-bg.jpg") no-repeat;
-    background-size: cover;
-  }
+  backface-visibility: hidden;
+  transition: all .4s ease-in-out;
   &__photo-wrap{
     margin: 40px 0 20px 0;
     @extend .about-dev__photo-wrap
@@ -36,7 +51,7 @@
   &__bottom{
     width: 100%;
     height: 45px;
-    background-color: #00bfa5;
+    background-color: $gray;
   }
   .social__list{
     margin-bottom: 25px;
@@ -56,20 +71,162 @@
     }
   }
   &__copyright{
-    position: absolute;
-    left:50%;
-    bottom: 40px;
-    transform: translateX(-50%);
+    margin: 20px 0;
     opacity:1;
   }
 }
 .auth__btn{
   border: 1px solid #fff;
   position: absolute;
-  right: 6%;
+  right: 2%;
   top: 25px;;
   &:hover{
     background-color: #fff;
-    color: #00bfa5;
+    color: $gray;
   }
 }
+.welcome__login{
+  @extend .welcome;
+  transform: rotateY(-180deg);
+  margin-left: -380px;
+  .login-form{
+    &__wrap{
+      padding: 30px 20px 17px 20px;
+    }
+    &__title{
+      @include dashes
+      @include dashtitle
+      margin-bottom: 20px;
+    }
+    &__input{
+      &-wrap{
+        display: flex;
+        margin-bottom: 20px;
+      }
+      &-icon{
+        background-color: #efeee9;
+        border-radius: 5px 0 0 5px;
+        position: relative;
+        width: 45px;
+        & svg{
+          opacity: .2;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 14px;
+          height: 15px;
+        }
+      }
+    }
+    &__btns{
+      @extend .welcome__bottom;
+      display: flex;
+    }
+    &__btn{
+      @extend .welcome__link;
+      width: 50%;
+      background-color: $gray;
+    }
+  }
+  .form__input{
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .captcha__checkbox,.add-captcha__radio{
+    display: none;
+  }
+  .captcha__input{
+    background-color: #fff;
+    border: 1px solid rgba(55, 62, 66, 0.2);
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px;
+  }
+  .login-form__captcha,.login-form__add-captcha{
+    margin-bottom: 20px;
+  }
+  .add-captcha__title{
+    font-family:'Roboto-Bold';
+    margin-bottom: 10px;
+  }
+  .captcha{
+    cursor: pointer;
+  }
+  .add-captcha__btn{
+    margin-right: 40px;
+    cursor: pointer;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  .add-captcha__buttons{
+    display: inline;
+  }
+  .captcha__fake-checkbox{
+    border-radius: 2px;
+    &:before{
+      background: url("../img/icons/check.svg") no-repeat;
+      background-size: 100% auto;
+      content: '';
+      height: 9px;
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      width: 12px;
+    }
+  }
+  .add-captcha__fake-radio{
+    border-radius: 50%;
+    &:before{
+      content: '';
+      background-color: $gray;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+      left: 5px;
+      opacity: 0;
+    }
+  }
+}
+//checked
+.captcha__checkbox:checked + .captcha__fake-checkbox{
+  background-color: $gray;
+  border-color: $gray;
+}
+.add-captcha__radio:checked + .add-captcha__fake-radio:before{
+  opacity: 1;
+}
+.paralax{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(0);
+  &__layer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    bottom: -10%;
+    left: -10%;
+  }
+}
+@for $i from 0 through 9{
+  .paralax__layer-#{$i}{
+    background-image: url("../img/background/layer_#{$i}.png");
+  }
+
+}
+
