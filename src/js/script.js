@@ -215,10 +215,8 @@ $(function() {
         $(this).parent('.blog-nav').toggleClass('open');
         return false;
     });
-});
-//flip
-$(function() {
 
+//flip
    if($('.welcome-wrap').length){
 
          $('.auth__btn').on('click',function(e) {
@@ -233,4 +231,5 @@ $(function() {
             $('.hero__welcome').removeClass('flip');
          });     
     }
+
 });
