@@ -112,7 +112,6 @@
                 title: "I'm here"
             });
             myMarker.setAnimation(google.maps.Animation.BOUNCE);
-
         }
     }
 //paralax
@@ -222,14 +221,32 @@ $(function() {
          $('.auth__btn').on('click',function(e) {
             e.preventDefault();
             $(this).css('display', 'none');
-            $('.hero__welcome').addClass('flip');
+            $('.hero__welcome').toggleClass('flip');
         });    
 
-         $('.login-form__btn').on('click',function(e) {
+        $('.login-form__btn').on('click',function(e) {
             e.preventDefault();
-             $('.auth__btn').css('display', 'inline-block');
-            $('.hero__welcome').removeClass('flip');
-         });     
+            $('.auth__btn').css('display', 'inline-block');
+            $('.hero__welcome').toggleClass('flip');
+        });
+       $(document).on('click', function(e) {           
+           var $this = $(e.target);
+           if(!$this.closest('.hero__welcome').length && !$this.closest('.auth__btn').length && $('.hero__welcome').hasClass('flip')){
+            $('.auth__btn').css('display', 'inline-block');
+            $('.hero__welcome').toggleClass('flip');
+           }
+       });
     }
+//ARROW BUTTONs
+    $('.header__link-arrow').on('click', function(e){
+        e.preventDefault();
+        var sectionTop = $('.wrapper').children().filter('section').first().offset().top;
+        $('html,body').animate({scrollTop: sectionTop}, 'slow');
+    });
+    $('.reviews__link-arrow').on('click',function(e){
+        e.preventDefault();        
+        $('html,body').animate({scrollTop: 0},'slow');
+    });
+
 
 });
