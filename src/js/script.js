@@ -224,7 +224,7 @@ $(function() {
             $('.hero__welcome').toggleClass('flip');
         });    
 
-        $('.login-form__btn').on('click',function(e) {
+        $('#on__front').on('click',function(e) {
             e.preventDefault();
             $('.auth__btn').css('display', 'inline-block');
             $('.hero__welcome').toggleClass('flip');
