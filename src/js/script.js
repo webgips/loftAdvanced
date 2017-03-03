@@ -93,8 +93,6 @@ $(function() {
         $(this).siblings('.menu').toggleClass('active');
         $('.wrapper').toggleClass('full-screen');        
     });
-
-
 //flip
    if($('.welcome-wrap').length){
 
@@ -128,7 +126,6 @@ $(function() {
         $('html,body').animate({scrollTop: 0},'slow');
     });
 //BLOG
-
   if($('.blog').length){
       var blogNav = (function(){
           var blogNav = $('.blog__left'),
@@ -182,7 +179,6 @@ $(function() {
       $('.blog-nav__link').on('click', function (e) {
           e.preventDefault();
           var href = $(this).attr('href');
-          console.log(href);
           blogNav.moveToPost(href);
       });
       $(window).on('scroll', function () {
@@ -190,29 +186,45 @@ $(function() {
           blogNav.activePost('.blog__item');
       });
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //GOOGLE MAPS
+//PRELOADER
+    var preloader = function () {
+        var images = [],
+            current = 0;
+        $('*').each(function () {
+            var
+                $this = $(this),
+                img = $this.is('img'),
+                path;
+            if (img) {
+                path = $this.attr('src');
+                if (path)
+                    images.push(path);
+            } else {
+                var background = $this.css('background-image');
+                if (background != 'none') {
+                    path = background.replace('url("', '').replace('")', '');
+                    if (path) images.push(path);
+                }
+            }
+        });
+        function progress() {
+            current += 1;
+            $('.preloader__text').text(Math.ceil(current * 100 / images.length) + '%');
+        };
+        images.map(function (path) {
+            $('<img>', {
+                attr: {
+                    src: path
+                }
+            }).on('load', progress);
+        });
+        $(window).on('load' ,function () {
+            $('.preloader').fadeOut();
+        });
+    };
+    preloader();    
+});
+//GOOGLE MAPS
     if($('#googlemap').length){
         function initMap() {
             var styles = [
@@ -304,7 +316,6 @@ $(function() {
                     ]
                 }
             ];
-
             var map = new google.maps.Map(document.getElementById('googlemap'), {
                 center:  {lat: 53.858654, lng:  27.554122},
                 scrollwheel: false,
@@ -328,4 +339,3 @@ $(function() {
             myMarker.setAnimation(google.maps.Animation.BOUNCE);
         }
     }
-});
