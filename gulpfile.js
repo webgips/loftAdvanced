@@ -17,7 +17,11 @@ global.$ = {
       rename: {
           'gulp-css-unit': 'cssunit'
       }
-  })
+  }),
+  source: require('vinyl-source-stream'),
+  browserify: require('browserify'),
+  watchify: require('watchify'),
+
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -30,7 +34,7 @@ $.gulp.task('default', $.gulp.series(
     'sass',
     'pug',
     'js:foundation',
-    'js:process',
+    'js:process',    
     'copy:image',
     'copy:fonts',    
     'css:foundation',
@@ -38,7 +42,7 @@ $.gulp.task('default', $.gulp.series(
     'sprite:png'
   ),
   $.gulp.parallel(
-    'watch',
+    'watch',    
     'serve'
   )
 ));
