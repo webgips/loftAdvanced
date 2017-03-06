@@ -160,6 +160,7 @@
     @include dashtitle
     &:before,&:after{
       background-color: #fff;
+      opacity: 1;
       display: none;
     }
     &:hover{
