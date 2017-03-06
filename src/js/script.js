@@ -30,8 +30,6 @@ $(function() {
             blurBg.set();
         });
     }
-
-    ///
     //MENU
     $('.hamburger__link').on('click', function (e) {
         e.preventDefault();
@@ -96,6 +94,9 @@ $(function() {
 //slider
     if($('.portfolio').length){
         workSlider.init('.slider__arrow');
-    }    
+    }
+    if($('#googlemap').length){
+        initMap();
+    }
 });
 

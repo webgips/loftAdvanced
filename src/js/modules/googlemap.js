@@ -1,7 +1,5 @@
 //GOOGLE MAPS
 module.exports = function() {
-    if($('#googlemap').length){
-        function initMap() {
             var styles = [
                 {
                     "featureType": "administrative",
@@ -112,8 +110,6 @@ module.exports = function() {
                 title: "I'm here"
             });
             myMarker.setAnimation(google.maps.Animation.BOUNCE);
-        }
-    }
 };
 
     
