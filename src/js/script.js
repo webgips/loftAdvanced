@@ -3,6 +3,7 @@
 
 $(function() {
     var initMap = require('./modules/googlemap'),
+        validate = require('./modules/validate'),
         workSlider = require('./modules/slider'),
         preloader = require('./modules/preloader'),
         blurBg = require('./modules/blur'),
@@ -13,23 +14,10 @@ $(function() {
 
 
 
-    preloader();
+
     //paralax
     // //parallax на welcome page
 
-    welcomeParallax.init()
-    //headerparallax на всех страницих кроме welcome
-    $(window).on('scroll', function(event) {
-       var wScroll = window.pageYOffset;
-       headerParallax.init(wScroll);
-    });
-    // blur на странице about
-    if ($('.reviews').length) {
-        blurBg.set();
-        $(window).on('resize', function () {
-            blurBg.set();
-        });
-    }
     //MENU
     $('.hamburger__link').on('click', function (e) {
         e.preventDefault();
@@ -37,8 +25,16 @@ $(function() {
         $(this).siblings('.menu').toggleClass('active');
         $('.wrapper').toggleClass('full-screen');
     });
-    //flip
+    //headerparallax на всех страницих кроме welcome
+    $(window).on('scroll', function(event) {
+       var wScroll = window.pageYOffset;
+       headerParallax.init(wScroll);
+    });
+    //welcome page
     if ($('.welcome-wrap').length) {
+        preloader();
+        welcomeParallax.init();
+        validate();
         $('.auth__btn').on('click', function (e) {
             e.preventDefault();
             $(this).css('display', 'none');
@@ -57,6 +53,23 @@ $(function() {
             }
         });
     }
+    //about page
+    if($('.about').length){
+        preloader();
+        if($('#googlemap').length){
+            initMap();
+        }
+    }
+    //works page
+    if($('.portfolio').length){
+        preloader();
+        workSlider.init('.slider__arrow');
+        blurBg.set();
+        validate();
+        $(window).on('resize', function () {
+            blurBg.set();
+        });
+    }
 //ARROW BUTTONs
     $('.header__link-arrow').on('click', function (e) {
         e.preventDefault();
@@ -68,8 +81,9 @@ $(function() {
         $('html,body').animate({scrollTop: 0}, 'slow');
     });
 
-//BLOG
+//BLOG page
     if ($('.blog').length) {
+        preloader();
         $('.blog-nav__btn').on('click', function (e) {
             e.preventDefault();
             $(this).parent('.blog-nav').toggleClass('open');
@@ -91,12 +105,6 @@ $(function() {
             blognav.activePost('.blog__item');
         });
     }
-//slider
-    if($('.portfolio').length){
-        workSlider.init('.slider__arrow');
-    }
-    if($('#googlemap').length){
-        initMap();
-    }
+
 });
 
