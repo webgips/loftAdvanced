@@ -17,7 +17,10 @@ global.$ = {
       rename: {
           'gulp-css-unit': 'cssunit'
       }
-  })
+  }),
+  source: require('vinyl-source-stream'),
+  browserify: require('browserify'),
+  watchify: require('watchify'),
 };
 
 $.path.task.forEach(function(taskPath) {

@@ -14,32 +14,42 @@ block content
                 .slider__display
                     img.slider__display-img(src="assets/img/works/work_img_1.png")
                 .slider__info
-                    .slider__info-item.active(data-img="assets/img/works/work_img_1.png")
+                    .slider__info-item.active(data-img="assets/img/works/work_img_1.png" data-id="work1")
+                        .base-title.slider__info-title Сайт доставки бургеров
+                        .slider__info-tech html, sass, javascript, one page scroll
+                        a.slider__info-btn.btn(href='./burgers/' target='_BLANK')
+                            +svg('info-btn__svg','link')
+                            | Посмотреть сайт
+                    .slider__info-item(data-img="assets/img/works/work_img_2.png" data-id="work2")
+                        .base-title.slider__info-title Сайт портфолио
+                        .slider__info-tech html, sass, javascript
+                        a.slider__info-btn.btn(href='./portfolio_old/' target='_BLANK')
+                            +svg('info-btn__svg','link')
+                            | Посмотреть сайт
+                    .slider__info-item(data-img="assets/img/works/work_img_3.png" data-id="work3")
                         .base-title.slider__info-title Сайт школы онлайн образования
-                        .slider__info-tech html, css, javascript
+                        .slider__info-tech html, sass, javascript
                         a.slider__info-btn.btn(href='#')
                             +svg('info-btn__svg','link')
                             | Посмотреть сайт
-                    .slider__info-item(data-img="assets/img/works/work_img_2.png")
-                        .base-title.slider__info-title
-                        .slider__info-tech
+                    .slider__info-item(data-img="assets/img/works/work_img_4.png" data-id="work4")
+                        .base-title.slider__info-title Trialog Group design
+                        .slider__info-tech html, sass, javascript
                         a.slider__info-btn.btn(href='#')
-                    .slider__info-item(data-img="assets/img/works/work_img_3.png")
-                        .base-title.slider__info-title
-                        .slider__info-tech
-                        a.slider__info-btn.btn(href='#')
-                    .slider__info-item(data-img="assets/img/works/work_img_4.png")
-                        .base-title.slider__info-title
-                        .slider__info-tech
-                        a.slider__info-btn.btn(href='#')
+                            +svg('info-btn__svg','link')
+                            | Посмотреть сайт
             .slider__right
                 .slider__arrows
                     .slider__arrow.arrow-prev
-                        img.slider__arrow-img(src="assets/img/works/work_img_1.png")
+                        .slider__arrow-imgs
+                            img.slider__arrow-img(data-id='work3' src="assets/img/works/work_img_3.png")
+                            img.slider__arrow-img(data-id='work2' src="assets/img/works/work_img_2.png")
+                            img.slider__arrow-img( data-id='work1' src="assets/img/works/work_img_1.png")
+                            img.slider__arrow-img( data-id='work4' src="assets/img/works/work_img_4.png")
                         .arrow-bg.arrow-prev__bg
                             +svg('arrow-bg__svg','portf_arrow_down')
                     .slider__arrow.arrow-next
-                        img.slider__arrow-img(src="assets/img/works/work_img_1.png")
+                        .slider__arrow-imgs
                         .arrow-bg.arrow-next__bg
                             +svg('arrow-bg__svg','portf_arrow_up')
     section.reviews
@@ -78,9 +88,9 @@ block content
                     .form__blur
                     .form__main
                         .base-title.form__title Связаться со мной
-                        input.form__inp.form__name(type='text' name='name' placeholder='Имя' required)
-                        input.form__inp.form__email(type='email' name='email' placeholder='Email' required)
-                        textarea.form__inp.form__textarea(name='text' placeholder='Ваше сообщение' required)
+                        input.form__inp.form__name(type='text' name='name' placeholder='Имя' )
+                        input.form__inp.form__email(type='email' name='email' placeholder='Email' )
+                        textarea.form__inp.form__textarea(name='text' placeholder='Ваше сообщение' )
                     .form__buttons
                         button.form__button.form__submit(type='submit' name='submit' value='') Отправить
                         button.form__button.form__reset(type='reset' name='reset' value='') Очистить

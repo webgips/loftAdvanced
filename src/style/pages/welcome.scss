@@ -13,11 +13,12 @@
   align-items: center;
   display: flex;
   padding: 70px 0;
-  transform-style: preserve-3d;
   transition: all .4s ease-in-out;
-
-  & .flip{
-    transform: rotateY(180deg);
+  &.flip  .welcome{
+    transform: rotateY(-180deg);
+  }
+  &.flip .welcome__login{
+    transform: rotateY(0);
   }
 }
 .welcome{
@@ -52,6 +53,9 @@
     width: 100%;
     height: 45px;
     background-color: $gray;
+    @include phones{
+      height: 2.785rem;
+    }
   }
   .social__list{
     margin-bottom: 25px;
@@ -79,7 +83,11 @@
   border: 1px solid #fff;
   position: absolute;
   right: 2%;
-  top: 25px;;
+  z-index:2;
+  top: 25px;
+  @include phones{
+    right: auto;
+  }
   &:hover{
     background-color: #fff;
     color: $gray;

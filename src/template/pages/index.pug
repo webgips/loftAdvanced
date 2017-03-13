@@ -56,11 +56,11 @@ html
                             .login-form__input-wrap
                                 .login-form__input-icon
                                     +svg('input-icon__login','login')
-                                input.form__input.form__inp(name='login' type='text' placeholder='Логин')
+                                input.form__input.form__inp(name='login' type='text' placeholder='Логин' required)
                             .login-form__input-wrap
                                 .login-form__input-icon
                                     +svg('input-icon__password','password')
-                                input.form__input.form__inp(name='password' type='password' placeholder='Пароль')
+                                input.form__input.form__inp(name='password' type='password' placeholder='Пароль' required)
                             .login-form__captcha
                                 label.captcha
                                     input.captcha__checkbox(type="checkbox" name="captcha" value="check")
@@ -78,8 +78,7 @@ html
                                         span.add-captcha__fake-radio.captcha__input
                                         span.add-captcha__text Не уверен
                         .login-form__btns
-                            a.login-form__btn(href='#') На главную
+                            a#on__front.login-form__btn(href='#') На главную
                             button.login-form__btn(type="submit") Войти
-
-
             .welcome__copyright.copyright © #{name} | создано с любовью в LoftSchool | 2017
+        include ../common/_preloader

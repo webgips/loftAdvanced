@@ -160,6 +160,7 @@
     @include dashtitle
     &:before,&:after{
       background-color: #fff;
+      opacity: 1;
       display: none;
     }
     &:hover{
@@ -178,6 +179,9 @@
       display: block;
       &.active{
         left:-16px;
+        @include phones{
+          left: 10px;
+        }
         & .hamburger__icon{
           display: none;
         }

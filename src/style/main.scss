@@ -20,8 +20,9 @@ $dashes-margin: 5px;
 @import "pages/blog";
 //fonts
 @import "common/fonts";
+//preloader
+@import "common/preloader";
 
-//adaptive
-
-
+//fancybox
+@import "fancybox/jquery.fancybox";
    
