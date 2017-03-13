@@ -22,6 +22,9 @@ module.exports = function() {
         function progress() {
             current += 1;
             $('.preloader__text').text(Math.ceil(current * 100 / images.length) + '%');
+            if((Math.ceil(current * 100 / images.length))>=100){
+                $('.preloader').fadeOut();
+            }
     };
         images.map(function (path) {
             $('<img>', {

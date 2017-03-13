@@ -2,10 +2,10 @@
 
 
 $(function() {
-    var initMap = require('./modules/googlemap'),
+    var preloader = require('./modules/preloader'),
+        initMap = require('./modules/googlemap'),
         validate = require('./modules/validate'),
         workSlider = require('./modules/slider'),
-        preloader = require('./modules/preloader'),
         blurBg = require('./modules/blur'),
         slider = require('./modules/slider'),
         blognav = require('./modules/blognav'),
