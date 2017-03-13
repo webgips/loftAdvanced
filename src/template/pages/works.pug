@@ -17,13 +17,13 @@ block content
                     .slider__info-item.active(data-img="assets/img/works/work_img_1.png" data-id="work1")
                         .base-title.slider__info-title Сайт доставки бургеров
                         .slider__info-tech html, sass, javascript, one page scroll
-                        a.slider__info-btn.btn(href='#')
+                        a.slider__info-btn.btn(href='./burgers/' target='_BLANK')
                             +svg('info-btn__svg','link')
                             | Посмотреть сайт
                     .slider__info-item(data-img="assets/img/works/work_img_2.png" data-id="work2")
                         .base-title.slider__info-title Сайт портфолио
                         .slider__info-tech html, sass, javascript
-                        a.slider__info-btn.btn(href='#')
+                        a.slider__info-btn.btn(href='./portfolio_old/' target='_BLANK')
                             +svg('info-btn__svg','link')
                             | Посмотреть сайт
                     .slider__info-item(data-img="assets/img/works/work_img_3.png" data-id="work3")
@@ -32,7 +32,7 @@ block content
                         a.slider__info-btn.btn(href='#')
                             +svg('info-btn__svg','link')
                             | Посмотреть сайт
-                    .slider__info-item(data-img="assets/img/works/work_img_4.jpg" data-id="work4")
+                    .slider__info-item(data-img="assets/img/works/work_img_4.png" data-id="work4")
                         .base-title.slider__info-title Trialog Group design
                         .slider__info-tech html, sass, javascript
                         a.slider__info-btn.btn(href='#')
@@ -45,14 +45,11 @@ block content
                             img.slider__arrow-img(data-id='work3' src="assets/img/works/work_img_3.png")
                             img.slider__arrow-img(data-id='work2' src="assets/img/works/work_img_2.png")
                             img.slider__arrow-img( data-id='work1' src="assets/img/works/work_img_1.png")
-                            img.slider__arrow-img( data-id='work4' src="assets/img/works/work_img_4.jpg")
+                            img.slider__arrow-img( data-id='work4' src="assets/img/works/work_img_4.png")
                         .arrow-bg.arrow-prev__bg
                             +svg('arrow-bg__svg','portf_arrow_down')
                     .slider__arrow.arrow-next
                         .slider__arrow-imgs
-                            //img.slider__arrow-img.img-active(src="assets/img/works/work_img_2.png")
-                            //img.slider__arrow-img(src="assets/img/works/work_img_3.png")
-                            //img.slider__arrow-img(src="assets/img/works/work_img_1.png")
                         .arrow-bg.arrow-next__bg
                             +svg('arrow-bg__svg','portf_arrow_up')
     section.reviews

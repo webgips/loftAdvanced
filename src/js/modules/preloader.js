@@ -22,7 +22,7 @@ module.exports = function() {
         function progress() {
             current += 1;
             $('.preloader__text').text(Math.ceil(current * 100 / images.length) + '%');
-        };
+    };
         images.map(function (path) {
             $('<img>', {
                 attr: {
