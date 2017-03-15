@@ -16,15 +16,15 @@ router.get('/', function(req, res) {
 
 });
 
-router.get('/blog', function(req, res) {
-  let obj = {title: 'Blog'};
-  const Model = mongoose.model('blog');
+// router.get('/blog', function(req, res) {
+//   let obj = {title: 'Blog'};
+//   const Model = mongoose.model('blog');
 
-  Model.find().then(items => {
-    Object.assign(obj, {items: items});
-    res.render('pages/blog', obj);
-  });
+//   Model.find().then(items => {
+//     Object.assign(obj, {items: items});
+//     res.render('pages/blog', obj);
+//   });
   
-});
+// });
 
 module.exports = router;

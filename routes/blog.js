@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 
-router.get('/blog', function(req, res) {
+router.get('/', function(req, res) {
    let obj = {
     title: 'Блог',
     name: 'Марков Максим'
