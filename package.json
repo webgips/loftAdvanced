@@ -30,9 +30,17 @@
     "gulp.spritesmith": "^6.3.0",
     "merge-stream": "^1.0.1",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.9.0"
+    "watchify": "^3.9.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
+    "nodemailer": "^3.1.4",
+    "nodemailer-smtp-transport": "^2.7.2",
     "normalize.css": "~5.0.0",
     "jquery": "~3.1.1"
   }
