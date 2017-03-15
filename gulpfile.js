@@ -12,7 +12,7 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   merge: require('merge-stream'),
-  browserSync: require('browser-sync').create(),
+  browserSync: require('browser-sync').create(),  
   gp: require('gulp-load-plugins')({
       rename: {
           'gulp-css-unit': 'cssunit'
@@ -21,6 +21,7 @@ global.$ = {
   source: require('vinyl-source-stream'),
   browserify: require('browserify'),
   watchify: require('watchify'),
+  nodemon: require('nodemon')
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -31,14 +32,15 @@ $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(
     'sass',
-    'pug',
     'js:foundation',
     'js:process',
     'copy:image',
-    'copy:fonts',    
+    'copy:fonts',
     'css:foundation',
-    'sprite:svg',
-    'sprite:png'
+    'sprite:svg'
+  ),
+  $.gulp.parallel(
+    'nodemon'
   ),
   $.gulp.parallel(
     'watch',
