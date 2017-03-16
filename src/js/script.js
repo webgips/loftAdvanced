@@ -105,6 +105,33 @@ $(function() {
             blognav.activePost('.blog__item');
         });
     }
+//admin pages
+    if($('.admin__form-blog').length){
+        var form = $('.admin__form-blog');
+        form.find('input[type=submit]').click(function(e) {
+            e.preventDefault();
+            $.post($(location).attr('href'), {
+                    title: $(form).find('input[name=title]').val(),
+                    date: $(form).find('input[name=date]').val(),
+                    text: $(form).find('textarea[name=text]').val()
+                },
+                function (data) {
+                    console.log('otpravili v bazy noviu zapis bloga')
+                    console.log(data);
+                    var status = data.status;
+                    $.fancybox(`<span class="fancybox__popup">${status} </span>`, {
+                        minWidth: 400,
+                        maxHeight: 50,
+                        afterClose: function () {
+                            console.log(data);
+                            if (typeof data.redirect == 'string') {
+                                window.location = data.redirect;
+                            }
+                        }
+                    });
 
+                });
+        });
+    };
 });
 
