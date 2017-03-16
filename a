@@ -1,0 +1,537 @@
+[33mcommit 1716f87a484d7c3c580b7d1b9a1eb229d91cfc6e[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 16 05:34:07 2017 +0300
+
+    update styles
+
+[33mcommit e9489909b774cbc3452861f051f129d5127ef3fe[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 16 05:33:41 2017 +0300
+
+    update pages
+
+[33mcommit 9bd29a6067cbd6743f23737fbd6e23b90b796887[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 16 05:33:22 2017 +0300
+
+    update pages
+
+[33mcommit 9b7daaf4485771706a6450f9751dc823df143abd[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 16 05:32:27 2017 +0300
+
+    update express routes
+
+[33mcommit 9428fe0ac33c53cd0bb49dae7d22616d699789b9[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 15 04:24:10 2017 +0300
+
+    bug fix nav links and routes
+
+[33mcommit a248d581c91e950a2b47438da9449c51b58c7291[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 15 04:07:56 2017 +0300
+
+    update files for nodemon server
+
+[33mcommit 62b1d3a10609b80b3fed4a89c2eeceff68f78c5e[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 15 04:06:49 2017 +0300
+
+    add express nodemon nodemailer body-parser
+
+[33mcommit c659d0cffdc572ab44cf953247d7eea0b40b88e6[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 15 04:05:48 2017 +0300
+
+    add express nodemon, update tasks
+
+[33mcommit a158048e35b2457604116507421c18d8496fd2dc[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 15 02:56:52 2017 +0300
+
+    bug fix
+
+[33mcommit 75218b1832367a2f481f569414e20da042fbe54d[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 14 02:37:10 2017 +0300
+
+    bug fix
+
+[33mcommit 4f900076e57a25743b254831a4e6e5261fe7c0b5[m
+Merge: 04e0b6d 084953b
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Mon Mar 13 23:54:56 2017 +0300
+
+    Merge pull request #5 from webgips/week4
+    
+    Week4
+
+[33mcommit 084953b5f4ed3be41ada19f91f7ba094cbf0ad7b[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 13 23:53:48 2017 +0300
+
+    add blog psot
+
+[33mcommit 75aec591aa2a390123821a7639f9dbed6ab9edb8[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 13 23:32:51 2017 +0300
+
+    bug fix
+
+[33mcommit ef771b6ba756597699506c4d671451d2a2a75f6c[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 7 21:43:17 2017 +0300
+
+    update readme
+
+[33mcommit 52ffe9f09cf028197e836e34d8c612be3a14777e[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 7 21:36:54 2017 +0300
+
+    update gulpfile
+
+[33mcommit d3f1a68c448fc771f03929f01c34d1a2b2d0b5ce[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 7 21:26:51 2017 +0300
+
+    bug fix
+
+[33mcommit 72b5030933633d6acdb1838b47f08958580c6b5c[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 7 21:26:08 2017 +0300
+
+    add validate
+
+[33mcommit a23ce3b833ed868e39732a8b081ed0725b475f29[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Mar 7 21:25:27 2017 +0300
+
+    add fancybox
+
+[33mcommit 371123312ca9d825b9d57d1dc12f5a581965efef[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:47:20 2017 +0300
+
+    update googlemap
+
+[33mcommit 180aee71dc0ddddeae84858c031391e7ba55dfd2[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:26:48 2017 +0300
+
+    bug fix
+
+[33mcommit 7e9a009a1b1b27c60d5b9e1995b875be2df7276a[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:22:57 2017 +0300
+
+    add browserify and vinyl-sourse-stream
+
+[33mcommit 2ddf155ba77c7e73d4b9f82f45695dd1af708903[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:21:50 2017 +0300
+
+    update js module pattern
+
+[33mcommit c15ca4c7887c448b87541df0bb447762a8d76c8b[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:17:54 2017 +0300
+
+    add work 4 img
+
+[33mcommit fb9de18083cbbd3f1a4531bdbd09e02fb317596d[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 22:17:21 2017 +0300
+
+    update gulp tasks. add browserify
+
+[33mcommit 45c6fbf7cb653a8ae2e0805d056c234a867d79cd[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 18:01:42 2017 +0300
+
+    update work pug, add js and imgs for slider
+
+[33mcommit 0c7b76da82e461bbbb0c8a7cb308729ee690342b[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Mar 6 16:14:48 2017 +0300
+
+    update photo
+
+[33mcommit 1a340fdb8ba7f2520e32e07190cb2b71eb039e69[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Mar 3 23:20:00 2017 +0300
+
+    add preloader
+
+[33mcommit c068a1215a9317275bd9dad11b2022d34307dae5[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Mar 3 02:01:23 2017 +0300
+
+    update socials links
+
+[33mcommit 33bca7feae1f49e224270dea67b33a3f0ca5e626[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Mar 3 00:31:28 2017 +0300
+
+    update blog js
+
+[33mcommit d47f300768b017260e63e2672d6b9e4d37426127[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Mar 3 00:25:21 2017 +0300
+
+    bug fix
+
+[33mcommit f1790a5b46cde6ac8764e14374226b280014f478[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Mar 3 00:21:28 2017 +0300
+
+    add js for blog sidebar
+
+[33mcommit ac745f2c1a996d76b912a942b4e21d0a921e4634[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 2 05:17:26 2017 +0300
+
+    map script update
+
+[33mcommit 993e57f336b97a71914566a20c7bf300b40b5afa[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 2 05:16:00 2017 +0300
+
+    form and flip effect update
+
+[33mcommit 204d3310c9e52a2f60ef2f6c84b296eafde2025a[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Mar 2 05:09:14 2017 +0300
+
+    bug fix
+
+[33mcommit 38a7489ce9aef94ac80774b57656ec491f6aa8c3[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 1 21:26:35 2017 +0300
+
+    bug fix
+
+[33mcommit 04e0b6dc0bebcd0ea660f6620c61f899ac3f50a1[m
+Merge: 0514bb9 76c165e
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Wed Mar 1 20:51:18 2017 +0300
+
+    Merge pull request #4 from webgips/week3
+    
+    Week3
+
+[33mcommit 76c165e0f0e2bbeb14a726ef0596a2a7a76149cd[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Mar 1 20:50:31 2017 +0300
+
+    bug fix
+
+[33mcommit b96cfa644f8a943218403ffb344a54219d25d483[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Feb 27 20:02:22 2017 +0300
+
+    bug fix
+
+[33mcommit d788b74999e5d603c099ffb0cae1b429b379355a[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Feb 27 03:45:19 2017 +0300
+
+    update readme
+
+[33mcommit 6bdb966b23b25f3762c1b7754e9584dc9c7f5e19[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Feb 27 03:35:55 2017 +0300
+
+    add flip effect
+
+[33mcommit 16c04ab9fe0bb1e6351f922886340b3a06a5efec[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Feb 27 03:35:35 2017 +0300
+
+    bug fix
+
+[33mcommit 065eeca23a82ac331deb9f7fed9234adc1ee9917[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sun Feb 26 04:13:21 2017 +0300
+
+    add color variable
+
+[33mcommit 4fb913b988aad83892a8e8a3c9f45a0f9b4a06b4[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sun Feb 26 03:50:10 2017 +0300
+
+    add styles for index page
+
+[33mcommit 22ca59c077176a9c4f75654b938e52461da23668[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 18:39:36 2017 +0300
+
+    add blog sidebar
+
+[33mcommit 2abcb5e3fff64e7b54868cdbe1e2cc78a32b36a6[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 18:00:12 2017 +0300
+
+    add animate for header menu
+
+[33mcommit 4d5cf717bb6c7860514cd7288001187b25301fe6[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 15:53:12 2017 +0300
+
+    add blur
+
+[33mcommit 51795995e9cac5280204ebd62e8098e67e9c1c42[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 04:37:40 2017 +0300
+
+    bug fix
+
+[33mcommit 8f8aed57ebed71a0f8eb922dd905d2f1aaeed608[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 04:33:56 2017 +0300
+
+    bug fix
+
+[33mcommit 6964592efae7f2fb62ee668b03b4a1d98bd6d707[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 03:29:55 2017 +0300
+
+    add header scroll parallax
+
+[33mcommit 8e6d806b8fc98659dd4de7410d3a5caf0a76af2b[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 25 02:46:51 2017 +0300
+
+    add parallax effect for index page
+
+[33mcommit 49aa95f13466476f626d063f5833f9a24155eb62[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Feb 24 21:09:10 2017 +0300
+
+    add adaptive styles for blog page
+
+[33mcommit 590ddb0b8783daa5778baa07ffeb93b3d2b0385d[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 23 03:36:44 2017 +0300
+
+    add adaptive styles for works page and bug fix
+
+[33mcommit 687defc5c5a65161e6667f372e75d5c83be16b90[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 21:50:33 2017 +0300
+
+    add styles for widescreen display
+
+[33mcommit a29c58034bd56639984a359164309e5eaf02220e[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 21:39:47 2017 +0300
+
+    add adaptive for about page and bug fix
+
+[33mcommit bd92ea5070d838f57479fd135a81aeb6e7347a94[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 18:39:39 2017 +0300
+
+    add google map
+
+[33mcommit 2db129a8a09197d5d0e83af5cb8e53b31476c613[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 04:05:10 2017 +0300
+
+    perfect pixel fix
+
+[33mcommit 9a8a4a9cf59bf29a4de5989a54e797e242ec0663[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 03:24:00 2017 +0300
+
+    add gulp-css-unit plugin
+
+[33mcommit 7d867109e940d544ecfda1d5157a7c443de239d9[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 22 03:02:05 2017 +0300
+
+    fix welcome page bugs
+
+[33mcommit 0514bb9ff7b99b57274d658b8b0c2127fc8e5ce3[m
+Merge: 26e7fdf a1f6554
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Tue Feb 21 01:30:29 2017 +0300
+
+    Merge pull request #3 from webgips/week2
+    
+    Week2
+
+[33mcommit a1f6554e17a8941c75c9c25dc949c5575ef90fed[m
+Merge: 864a350 50e5163
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 19:53:14 2017 +0300
+
+    Merge branch 'week2' of https://github.com/webgips/loftAdvanced into week2
+
+[33mcommit 864a35071f11e2fe36b6e474107b7da3a16d8900[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 19:52:40 2017 +0300
+
+    update readme
+
+[33mcommit 50e51638cb7a89edb60104372e7ea417f76ab670[m
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sat Feb 18 19:47:01 2017 +0300
+
+    Update
+
+[33mcommit 9f57f27ffa8f01742eefb468f0c7f793c3035649[m
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sat Feb 18 19:46:46 2017 +0300
+
+    Update README.md
+
+[33mcommit 41414046c97ada0e5c3ea574185045e0c6582273[m
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sat Feb 18 19:45:01 2017 +0300
+
+    Update
+
+[33mcommit aae3b2cab1a5e0be6229fd7639779c36fd77494b[m
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sat Feb 18 19:42:38 2017 +0300
+
+    Update
+
+[33mcommit 8468befcdd39b24afbeb7efc753f695888995539[m
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sat Feb 18 19:40:51 2017 +0300
+
+    Update README.md
+
+[33mcommit f393573594719a0b034761288795f12a0938cb08[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 19:36:59 2017 +0300
+
+    update readme
+
+[33mcommit 3a391f3aade05d939a35b1ee75e3068bbc9fb7d8[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 19:32:01 2017 +0300
+
+    update blog.pug
+
+[33mcommit a0799519b7e793f6968b1983954b175c286f7d90[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 19:23:55 2017 +0300
+
+    comlipte blog page styles
+
+[33mcommit b26b4d86efe286697bae1f2856251a38b481c388[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 18 18:14:06 2017 +0300
+
+    complite works page styles
+
+[33mcommit 4676579d5f453cebbf1cdf23ba1c3c0eb42294fd[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Feb 17 20:24:00 2017 +0300
+
+    update about stules
+
+[33mcommit 05a501c2f499d9d3d222683f98fb9f470f578dd4[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Feb 17 18:26:51 2017 +0300
+
+    complite footer
+
+[33mcommit a8c26d2f345d162276031edeaabbd1f3cdc6a9c7[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Fri Feb 17 16:43:13 2017 +0300
+
+    update about page styles
+
+[33mcommit a6e2a6df77619ae2454545a63697393fff490ca6[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 19:07:08 2017 +0300
+
+    update about page styles
+
+[33mcommit 49fd89a0a0cd7eda1fd9d86caaf08de86c0a22e9[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 03:05:18 2017 +0300
+
+    update header.pug, can create svg with different clases
+
+[33mcommit 4c601030c99cc16ef43f0fee4f069990701458f4[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 02:22:01 2017 +0300
+
+    update welcome page styles
+
+[33mcommit ae3baca0f312b34f2b7a678eb1cecbd0c743f3b0[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 02:17:22 2017 +0300
+
+    complite welcome page styles
+
+[33mcommit be0e7fade904a25f15f41d729cfc103d8d97b54a[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 00:42:38 2017 +0300
+
+    complite header style
+
+[33mcommit 07e0b02da65b54fabce5789313f4bc108662134a[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Thu Feb 16 00:04:59 2017 +0300
+
+    add svg mixin
+
+[33mcommit 63ced38ccf99406b6e15ae3c2380b26dcee61ff0[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Wed Feb 15 22:07:46 2017 +0300
+
+    add fonts
+
+[33mcommit 26e7fdf1470d44068a4c93a0cfffd9491c8bdbdd[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Tue Feb 14 17:50:11 2017 +0300
+
+    add about, index pages
+
+[33mcommit adcab230c458338bc605fe698e3c7b6c9804c18c[m
+Merge: 5b6d89a 8f7d0c3
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Mon Feb 13 19:53:08 2017 +0300
+
+    Merge pull request #2 from webgips/week1
+    
+    add pages
+
+[33mcommit 8f7d0c32a47d28b14bd12d45d7dda7455f834efc[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Mon Feb 13 19:51:43 2017 +0300
+
+    add pages
+
+[33mcommit 5b6d89a710b53a72def185d49bc70b50ab38c956[m
+Merge: 018e818 f046442
+Author: Maxim <webgips@users.noreply.github.com>
+Date:   Sun Feb 12 00:05:02 2017 +0300
+
+    Merge pull request #1 from webgips/week1
+    
+    Week1
+
+[33mcommit f046442b88214924ee310f23eb49c6af6d747b16[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 11 16:42:26 2017 +0300
+
+    update readme
+
+[33mcommit 6eba3c4424322f5a216957a89b4c51749cff726f[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 11 16:38:22 2017 +0300
+
+    add gulp tasks, update readme
+
+[33mcommit 018e818319db5570bd48cf9ebc5810e3c09f60df[m
+Author: Maxim Markov <webgips@gmail.com>
+Date:   Sat Feb 11 16:01:55 2017 +0300
+
+    create readme.md
