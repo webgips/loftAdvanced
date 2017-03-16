@@ -1,0 +1,93 @@
+
+.admin{
+	&__body{
+		background: url(../img/welcome-bg.jpg);
+		background-size: cover;
+	}
+	&__wrapper{
+		display: flex;
+	    flex-direction: column;
+	    height: 100%;
+	}
+	&__header{
+		height: 80px;
+		background-color: $gray;
+		font-size: 28px;
+		font-family: "Roboto-Medium";
+		display: flex;
+    	justify-content: space-between;
+    	&-left,&-right{
+    		color:#fff;
+    		padding: 20px 20px;
+    	}
+    	&-link{
+			color:#fff;
+			text-decoration: underline;
+    	}
+	}
+	&__nav-list{
+		display: flex;
+    	justify-content: flex-start;
+    	background-color: #f0efe9;
+	}
+	&__nav-item{		
+		height: 60px;
+		padding: 20px 20px;
+		background-color: #f0efe9;
+		border-right: 2px solid #fff;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	&__nav-link{
+		color: $asphalt;
+		white-space:nowrap;
+	}
+	&__main{
+		background-color: rgba(#fff,.85);
+		display: flex;
+    	flex-direction: column;
+    	flex-wrap:wrap;
+    	height: 100%;
+    	padding: 20px 40px;
+	}
+	&__title{
+		font-size: 21px;
+		color: $asphalt;
+		font-family: "Roboto-Medium";
+	}
+}
+.admin__form-about{
+    display: flex;    
+    flex-wrap: wrap;
+}
+.form-about{
+		&__input{			
+  			border-radius: 5px;
+			  background-color: #fff; 
+			  width: 46px;
+			  height: 32px;
+			  border: none;
+			  margin-left: 50px;
+		}
+		&__wrap{
+			display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    width: 200px;
+		    height: 180px;	    		    
+		}
+		&__label{
+			display: flex;
+    		justify-content: flex-end;
+    		padding-bottom: 10px;
+		}
+		&__submit{
+			border: 0;
+			width: 120px;
+			height: 45px;
+			align-self: flex-end;
+			margin-left: 50px;
+		}
+	
+}
