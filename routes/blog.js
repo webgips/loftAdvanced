@@ -11,8 +11,15 @@ router.get('/', function(req, res) {
 
   // Model.find().then(items => {
   //   Object.assign(obj, {items: items});
-    res.render('pages/blog', obj);
+    // res.render('pages/blog', obj);
   // });
+	const Model = mongoose.model('blog');
+
+  Model.find().then(posts => {
+    Object.assign(obj, {posts: posts});
+    res.render('pages/blog', obj);
+    console.log(obj);
+  });
 
 });
 
