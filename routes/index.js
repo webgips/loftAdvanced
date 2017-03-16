@@ -29,17 +29,14 @@ router.post('/', (req, res) => {
 
     //пытаемся найти пользователя с указанным логином и паролем
   Model.findOne({login: req.body.login, password: password}).then(item => {
-        //если такой пользователь не найден - сообщаем об этом
-        console.log(req.body.login);
-        console.log(password);
+        //если такой пользователь не найден - сообщаем об этом       
     if (!item) {
       res.json({status: 'Логин и/или пароль введены неверно!'});
     } else {
           //если найден, то делаем пометку об этом в сессии пользователя, который сделал запрос
       req.session.isAdmin = true;      
       res.json({status: 'Авторизация успешна!',
-  				redirect: '/admin'});
-     
+  				redirect: '/admin'});     
     }
   });
 });

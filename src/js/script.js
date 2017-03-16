@@ -116,14 +116,11 @@ $(function() {
                     text: $(form).find('textarea[name=text]').val()
                 },
                 function (data) {
-                    console.log('otpravili v bazy noviu zapis bloga')
-                    console.log(data);
                     var status = data.status;
                     $.fancybox(`<span class="fancybox__popup">${status} </span>`, {
                         minWidth: 400,
                         maxHeight: 50,
-                        afterClose: function () {
-                            console.log(data);
+                        afterClose: function () {                            
                             if (typeof data.redirect == 'string') {
                                 window.location = data.redirect;
                             }

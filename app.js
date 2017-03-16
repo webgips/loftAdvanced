@@ -5,9 +5,12 @@ const fs = require('fs');
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const server = http.createServer(app);
+const session = require('express-session');
 const currentStatic = require('./gulp/config').root;
 const config = require('./config.json');
+const MongoStore = require('connect-mongo')(session);
 const uploadDir = config.upload;
 
 const mongoose = require('mongoose');
@@ -22,7 +25,7 @@ mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name
   throw e;
 });
 */
-mongoose.connect('mongodb://losttest:123456789@ds131890.mlab.com:31890/portfolio');
+mongoose.connect('mongodb://lofttest:123456789@ds131890.mlab.com:31890/portfolio');
 
 //подключаем модели(сущности, описывающие коллекции базы данных)
 require('./models/blog');
@@ -35,9 +38,27 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, currentStatic)));
+app.use(session({
+  secret: 'secret',
+  key: 'keys',
+  cookie: {
+    path: '/',
+    httpOnly: true,
+    maxAge: null
+  },
+  saveUninitialized: false,
+  resave: false,
+  store: new MongoStore({mongooseConnection: mongoose.connection})
+}));
+
 
 app.use('/', require('./routes/index'));
+app.use('/admin', require('./routes/admin'));
+app.use('/admin/blog', require('./routes/adminBlog'));
+app.use('/admin/works', require('./routes/adminWorks'));
 app.use('/about', require('./routes/about'));
 app.use('/works', require('./routes/works'));
 app.use('/blog', require('./routes/blog'));
