@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/main.css')
+    script(src='/assets/js/foundation.js' defer)
+    script(src='/assets/js/app.min.js' defer)  
+  body.admin__body
+    .admin__wrapper
+      header.admin__header
+        .admin__header-left Панель администирования
+        .admin__header-right 
+          a.admin__header-link(href='./') Вернутся на сайт
+      nav.admin__nav
+        ul.admin__nav-list
+          li.admin__nav-item 
+            a.admin__nav-link(href='/admin') Страница "Обо мне" 
+          li.admin__nav-item 
+            a.admin__nav-link(href='/admin/blog') Страница "Блог" 
+          li.admin__nav-item 
+             a.admin__nav-link(href='/admin/works') Страница "Мои работы"
+      .admin__main
+        if(title=='Страница "Обо мне"')
+          include admin/about
+        if(title=='Страница "Блог"')
+          include admin/blog
