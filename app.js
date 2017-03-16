@@ -22,11 +22,11 @@ mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name
   throw e;
 });
 */
-mongoose.connect('mongodb://loftschool:567234@ds123080.mlab.com:23080/myportfolio');
+mongoose.connect('mongodb://losttest:123456789@ds131890.mlab.com:31890/portfolio');
 
 //подключаем модели(сущности, описывающие коллекции базы данных)
-// require('./models/blog');
-// require('./models/pic');
+require('./models/blog');
+require('./models/user');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
